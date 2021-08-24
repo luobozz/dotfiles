@@ -70,7 +70,7 @@ ZSH_THEME="eastwood"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,5 +99,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#
+#
+# Export
 export PATH="/home/luobo/.local/bin/:$PATH"
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+#
+#
+#
+# Alias
 alias ra="ranger"
