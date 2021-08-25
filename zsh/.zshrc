@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # Export
 export PATH="/home/luobo/.local/bin/:$PATH"
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+export EDITOR=/usr/bin/nvim
 #
 #
 #

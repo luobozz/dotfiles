@@ -57,4 +57,7 @@ nv
 
 #推出重新nv checkhealth
 :checkhealth
+#安装LSP support.
+:CocInstall coc-json coc-tsserver
+
 ```
