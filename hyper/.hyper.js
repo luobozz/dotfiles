@@ -4,35 +4,13 @@
 // See https://hyper.is#cfg for all currently supported options.
 module.exports = {
     config: {
-        visual: {
-            // is panel default opened
-            opened: true,
-            // panel's margin-top
-            top: '35px',
-            // panel's margin-bottom
-            bottom: '1px',
-            // hotkey to toggle panel (broken)
-            hotkey: 'Ctrl+G',
-            // setting of contexts
-            context: {
-                // setting for npm scripts
-                node: {
-                    // choose npm or yarn
-                    tool: 'npm',
-                },
-            }
-        },
         opacity: {
-            focus: 0.90,
-            blur: 0.90
+            focus: 1,
+            blur: 1
         },
         verminal: {
             fontFamily: 'JetBrains Mono',
-            fontSize: 18
-        },
-        alwaysOnTop: {
-            debug: false,
-            default: false // enabled on application start
+            fontSize: 16
         },
         // choose either `'stable'` for receiving highly polished,
         // or `'canary'` for less polished but more frequent updates
@@ -173,7 +151,8 @@ module.exports = {
         "hyper-dark-scrollbar",
         "hyper-statusline-extended",
         "hyper-mac-controls",
-        "hyper-dnd-tabs"
+        "hyper-dnd-tabs",
+        "hyperterm-colors"
     ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
