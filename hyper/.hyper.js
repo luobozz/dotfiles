@@ -9,8 +9,9 @@ module.exports = {
             blur: 1
         },
         verminal: {
-            fontFamily: 'JetBrains Mono',
-            fontSize: 16
+            fontFamily: 'Fira Mono',
+            fontSize: 16,
+            fontWeight: '500',
         },
         // choose either `'stable'` for receiving highly polished,
         // or `'canary'` for less polished but more frequent updates
@@ -18,7 +19,7 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 12,
         // font family with optional fallbacks
-        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Inconsolata, Bahnschrift,"Fantasque Sans Mono", "Fantasque Sans Mono Bold Italic","JetBrains Mono"',
+        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Inconsolata, Bahnschrift,"Fantasque Sans Mono", "Fantasque Sans Mono Bold Italic","JetBrains Mono","Fira Mono"',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
