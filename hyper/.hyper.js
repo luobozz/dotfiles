@@ -153,7 +153,8 @@ module.exports = {
         "hyper-statusline-extended",
         "hyper-mac-controls",
         "hyper-dnd-tabs",
-        "hyperterm-base16-tomorrow-dark"
+        "hyperterm-base16-tomorrow-dark",
+        "hyperterm-bold-tab"
     ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
