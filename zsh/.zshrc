@@ -111,3 +111,4 @@ export EDITOR=/usr/bin/nvim
 #
 # Alias
 alias ra="ranger"
+alias nv="nvim"
