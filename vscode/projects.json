@@ -1,0 +1,58 @@
+[
+	{
+		"name": "lb_win_tmp",
+		"rootPath": "g:\\tmp",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "lb_doc",
+		"rootPath": "c:\\Users\\43733\\Documents\\lb",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "lb_my_win_scrpi",
+		"rootPath": "e:\\code\\gitCode\\luobo\\my_win_scrpit",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "lb_my_properities",
+		"rootPath": "e:\\code\\gitCode\\luobo\\my_properities",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "lb_my_shell",
+		"rootPath": "e:\\code\\gitCode\\luobo\\my_shell",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "tmp_20210820_sql",
+		"rootPath": "g:\\20210820_sql",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "lb_my_python_script",
+		"rootPath": "e:\\code\\gitCode\\luobo\\my_python_script",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "work_swtools",
+		"rootPath": "e:\\code\\gitCode\\luobo\\swtools",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]
