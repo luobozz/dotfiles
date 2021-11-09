@@ -70,7 +70,7 @@ ZSH_THEME="essembeh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
