@@ -112,4 +112,4 @@ export PATH="/home/luobo/bin/:$PATH"
 #
 # Alias
 alias ra="ranger"
-alias nv="nvim
+alias nv="nvim"
