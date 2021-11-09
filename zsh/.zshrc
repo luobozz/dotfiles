@@ -70,7 +70,7 @@ ZSH_THEME="essembeh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions zsh-nvm)
+plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,9 +106,10 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/home/luobo/.local/bin/:$PATH"
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 export EDITOR=/usr/bin/nvim
+export PATH="/home/luobo/bin/:$PATH"
 #
 #
 #
 # Alias
 alias ra="ranger"
-alias nv="nvim"
+alias nv="nvim
