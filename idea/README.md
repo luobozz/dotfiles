@@ -5,3 +5,6 @@
 > 1. Setting->Appearance & Behavior->Appearance->Custom font and size (界面字体)
 > 2. Setting->Edit->Color Scheme->Color Scheme Font (编辑器字体)
 > 3. Setting->Edit->Color Scheme->Console Font (终端字体)
+
+#### 插件
+- 复制源主机Roaming目录plugins然后更新
