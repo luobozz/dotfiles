@@ -6,9 +6,13 @@
 [https://github.com/PowerShell/PowerShell/releases](https://github.com/PowerShell/PowerShell/releases)
 
 # 安装oh-my-posh & posh-git
-<!-- git存疑问,不安装会报posh的特殊依赖 -->
-- Install-Module posh-git -Scope CurrentUser # posh-git
-- Install-Module oh-my-posh -Scope CurrentUser
+
+```console
+# git存疑问,不安装会报posh的特殊依赖
+
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+```
 
 # 修改$Profile配置文件
 `code $Profile`
