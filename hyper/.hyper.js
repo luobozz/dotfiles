@@ -9,7 +9,7 @@ module.exports = {
             blur: 1
         },
         verminal: {
-            fontFamily: 'Fira Mono',
+            fontFamily: 'Fira Mono,FiraMono NF',
             fontSize: 16,
             fontWeight: '500',
         },
@@ -19,7 +19,7 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 12,
         // font family with optional fallbacks
-        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Inconsolata, Bahnschrift,"Fantasque Sans Mono", "Fantasque Sans Mono Bold Italic","JetBrains Mono","Fira Mono"',
+        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Inconsolata, Bahnschrift,"Fantasque Sans Mono", "Fantasque Sans Mono Bold Italic","JetBrains Mono","Fira Mono","FiraMono NF"',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
@@ -48,7 +48,7 @@ module.exports = {
         // custom CSS to embed in the main window
         css: '',
         // custom CSS to embed in the terminal window
-        termCSS: '',
+        termCSS: '.wc-node.unicode-node{width:1em}',
         // set custom startup directory (must be an absolute path)
         workingDirectory: '',
         // if you're using a Linux setup which show native menus, set to false

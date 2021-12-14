@@ -17,3 +17,4 @@
 [https://github.com/powerline/fonts](https://github.com/powerline/fonts)
 > 大于>3.0版本无法识别图标的问题,下载nerd字体安装，并且配置，这里我适用firamono nerd
 [https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads)
+>powerShell快捷方式里无法设置字体,通过pwsh.exe启动设置后生效
