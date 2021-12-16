@@ -3,7 +3,46 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 module.exports = {
+    // a list of plugins to fetch and install from npm
+    // format: [@org/]project[#version]
+    // examples:
+    //   `hyperpower`
+    //   `@company/project`
+    //   `project#1.0.1`
+    plugins: [
+        // "verminal",
+        // "hyper-search",
+        // "hyper-opacity",
+        // "hyperterm-dibdabs",
+        // "hyper-dark-scrollbar",
+        // "hyper-statusline-extended",
+        // "hyper-mac-controls",
+        // "hyper-dnd-tabs",
+        // "hyperterm-bold-tab",//当前选项卡加粗
+
+        "hyper-dnd-tabs",//拖动排列选项卡
+        "hyperterm-bold-tab",//当前选项卡加粗
+        // "hyperborder",//彩色边框
+        "hyper-dark-scrollbar",//滚动条
+        "hyper-save-windowstate",//窗口大小记忆
+        "hyper-tabs-enhanced",
+        "hyper-aurora",
+    ],
+    // in development, you can create a directory under
+    // `~/.hyper_plugins/local/` and include it here
+    // to load it and avoid it being `npm install`ed
+    localPlugins: [],
+    keymaps: {
+        // Example
+        // 'window:devtools': 'cmd+alt+o',
+    },
+    //OTHER CF
     config: {
+        hyperTabs: {
+            closeAlign: 'right',
+            // trafficButtons: true,
+            // activityPulse: false,
+        },
         opacity: {
             focus: 1,
             blur: 1
@@ -17,12 +56,15 @@ module.exports = {
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
-        fontSize: 12,
-        // font family with optional fallbacks
-        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Inconsolata, Bahnschrift,"Fantasque Sans Mono", "Fantasque Sans Mono Bold Italic","JetBrains Mono","Fira Mono","FiraMono NF"',
-        // default font weight: 'normal' or 'bold'
-        fontWeight: 'normal',
-        // font weight for bold characters: 'normal' or 'bold'
+        // fontSize: 12,
+        // // font family with optional fallbacks
+        // fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, Inconsolata, Bahnschrift,"Fantasque Sans Mono", "Fantasque Sans Mono Bold Italic","JetBrains Mono","Fira Mono","FiraMono NF"',
+        // // default font weight: 'normal' or 'bold'
+        // fontWeight: 'normal',
+        // // font weight for bold characters: 'normal' or 'bold'
+        fontFamily: 'Fira Mono,FiraMono NF',
+        fontSize: 16,
+        fontWeight: '500',
         fontWeightBold: 'bold',
         // line height as a relative unit
         lineHeight: 1,
@@ -137,32 +179,6 @@ module.exports = {
         // set to true to disable auto updates
         disableAutoUpdates: false,
         // for advanced config flags please refer to https://hyper.is/#cfg
-    },
-    // a list of plugins to fetch and install from npm
-    // format: [@org/]project[#version]
-    // examples:
-    //   `hyperpower`
-    //   `@company/project`
-    //   `project#1.0.1`
-    plugins: [
-        "verminal",
-        "hyper-search",
-        "hyper-opacity",
-        "hyperterm-dibdabs",
-        "hyper-dark-scrollbar",
-        "hyper-statusline-extended",
-        "hyper-mac-controls",
-        "hyper-dnd-tabs",
-        "hyperterm-base16-tomorrow-dark",
-        "hyperterm-bold-tab"
-    ],
-    // in development, you can create a directory under
-    // `~/.hyper_plugins/local/` and include it here
-    // to load it and avoid it being `npm install`ed
-    localPlugins: [],
-    keymaps: {
-        // Example
-        // 'window:devtools': 'cmd+alt+o',
     },
 };
 //# sourceMappingURL=config-default.js.map
