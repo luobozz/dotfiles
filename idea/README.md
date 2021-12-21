@@ -6,7 +6,7 @@
 > 2. Setting->Edit->Color Scheme->Color Scheme Font (编辑器字体)
 > 3. Setting->Edit->Color Scheme->Console Font (终端字体) 注意设置forback字体为nerd字体
 #### 插件
-- 复制源主机Roaming目录plugins然后更新
+<!-- - 复制源主机Roaming目录plugins然后更新 -->
 
 #### 更改终端
 > Tools>Terminal 修改终端为 `pwsh.exe`
