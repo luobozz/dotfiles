@@ -26,7 +26,8 @@ module.exports = {
         "hyper-dark-scrollbar",//滚动条
         "hyper-save-windowstate",//窗口大小记忆
         "hyper-tabs-enhanced",
-        "hyper-aurora",
+        // "hyper-aurora",
+        "doki-theme-hyper",
     ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
