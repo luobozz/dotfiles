@@ -72,6 +72,7 @@ ZSH_THEME="essembeh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions zsh-nvm)
 
+[ ! -f "$HOME/.lbsh/.lbsh_profile" ] || ls $HOME/.lbsh/.lbsh_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
