@@ -1,0 +1,20 @@
+#!/bin/bash
+install_home=$(pwd)
+# 复制备份的没补丁文件
+cp -rf ${install_home}/config.h.og  ${install_home}/config.def.h
+# 备份上个文件
+cp -rf ${install_home}/config.h  ${install_home}/config.h.bk
+if [ -d ${install_home}/patches ]; then
+  for i in ${install_home}/patches/*.diff; do
+    if [ -r $i ]; then
+      patch -fp1 < $i
+    fi
+  done
+  unset i
+fi
+
+# 删除过程对比文件
+rm *.rej
+rm *.orig
+# 保存补丁后文件
+mv -f  ${install_home}/config.def.h  ${install_home}/config.h 
