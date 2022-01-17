@@ -1,14 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
-/* appearance */
-static const unsigned int snap      = 320;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
-static const char normbgcolor[]           = "#222222";
-static const char col_gray1[]       = "#222222";
 
+//未知
+static const unsigned int snap      = 32;       /* snap pixel */
 //窗口边框宽度
 static const unsigned int borderpx  = 3;
+static const int showbar            = 1;        /* 0 means no bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
+
 // 字体
 static const char *fonts[]          = { "Fira Mono:style=Bold:size=10","HarmonyOS Sans SC:style=Bold:size=10" };
 static const char dmenufont[]       = "Fira Mono:style=Bold:size=10";
@@ -25,9 +24,11 @@ static const char col_bg_s[]       = "#6486aa";
 static const char col_border_s[]       = "#6486aa";
 
 //dmenu色
+static const char col_gray1[]       = "#323742";
 static const char col_dmenu_fg[]       = "#bbbbbb";
 static const char col_dmenu_fg_s[]       = "#eeeeee";
 static const char col_dmenu_bg_s[]       = "#6486aa";
+
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -69,7 +70,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/zsh", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
