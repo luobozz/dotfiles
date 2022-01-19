@@ -9,12 +9,12 @@ cp -rf ${install_home}/dwm/* ~/soft/dwm
 cd ~/soft/dwm
 sudo make install
 
-# ps -e|grep st|awk '{print $1}'|xargs kill -9
-rm -rf ~/soft/st
-mkdir -p ~/soft/st
-cp -rf ${install_home}/st/* ~/soft/st
-cd ~/soft/st
-sudo make install
+# # ps -e|grep st|awk '{print $1}'|xargs kill -9
+# rm -rf ~/soft/st
+# mkdir -p ~/soft/st
+# cp -rf ${install_home}/st/* ~/soft/st
+# cd ~/soft/st
+# sudo make install
 
 cp -r ${install_home}/.xinitrc.d ~/
 cp ${install_home}/.xinitrc ~/.xinitrc
