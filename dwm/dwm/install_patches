@@ -1,35 +1,5 @@
 #!/bin/bash
 install_home=$(pwd)
-buding=0
-
-for i in ${install_home}/*; do
-  if [[ "${install_home}/og ${install_home}/patches ${install_home}/install_patches" != *"${i}"* ]]; then
-    rm -rf ${i}
-  fi
-done
-unset i
-
-# 复制备份的没补丁文件
-cp -rf ${install_home}/og/* ./
-mv -f  ${install_home}/config.h  ${install_home}/config.def.h 
-
-if [ -d ${install_home}/patches ]; then
-  for i in ${install_home}/patches/*.diff; do
-    if [ -r $i ]; then
-      buding=1
-      patch -fp1 < $i
-      # 打过的补丁不重复
-      mv -f ${i} ${i}.down
-    fi
-  done
-  unset i
-fi
-
-(( ${buding} == 1 )) && {
-  # 删除过程对比文件
-  rm *.rej
-  rm *.orig
-  # 保存补丁后文件
-  mv -f  ${install_home}/config.def.h  ${install_home}/config.h 
-}
-
+wget -O ${install_home}/patches/patch.diff $1
+patch -fp1 < ${install_home}/patches/patch.diff
+# rm -rf ${install_home}/patches/patch.diff

@@ -1,40 +1,23 @@
 /* See LICENSE file for copyright and license details. */
 
-
-//未知
+/* appearance */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-//窗口边框宽度
-static const unsigned int borderpx  = 3;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-
-// 字体
 static const char *fonts[]          = { "Fira Mono:style=Bold:size=10","HarmonyOS Sans SC:style=Bold:size=10" };
 static const char dmenufont[]       = "Fira Mono:style=Bold:size=10";
-
-//颜色
-//未选中前景
-static const char col_fg[]       = "#fffffb";
-static const char col_bg[]       = "#323742";
-static const char col_border[]       = "#323742";
-
-//选中前景
-static const char col_fg_s[]       = "#fffffb";
-static const char col_bg_s[]       = "#6486aa";
-static const char col_border_s[]       = "#6486aa";
-
-//dmenu色
 static const char col_gray1[]       = "#323742";
-static const char col_dmenu_fg[]       = "#bbbbbb";
-static const char col_dmenu_fg_s[]       = "#eeeeee";
-static const char col_dmenu_bg_s[]       = "#6486aa";
-
-
+static const char col_gray2[]       = "#323742";
+static const char col_gray3[]       = "#fffffb";
+static const char col_gray4[]       = "#fffffb";
+static const char col_cyan[]        = "#6486aa";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_fg, col_bg, col_border },
-	[SchemeSel]  = { col_fg_s, col_bg_s, col_border_s  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
+
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -70,11 +53,11 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/zsh", "-c", cmd, NULL } }
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_dmenu_fg, "-sb", col_dmenu_bg_s, "-sf", col_dmenu_fg_s, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
