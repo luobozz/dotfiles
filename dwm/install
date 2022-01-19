@@ -1,20 +1,52 @@
 #!/bin/bash
 install_home=$(pwd)
+error_modal=()
 
-pid=$(ps -ef | grep dwm | grep -v grep | awk '{print $2}')
-[[ -n "${pid}" ]] && kill -9 ${pid}
-rm -rf ~/soft/dwm
-mkdir -p ~/soft/dwm
-cp -rf ${install_home}/dwm/* ~/soft/dwm
-cd ~/soft/dwm
-sudo make install
+function cecho() {
+    if [ "$1" == "red" ]; then
+        echo -e "\033[31m$2\033[0m"
+    elif [ "$1" == "yellow" ]; then
+        echo -e "\033[33m$2\033[0m"
+    elif [ "$1" == "green" ]; then
+        echo -e "\033[32m$2\033[0m"
+    elif [ "$1" == "blue" ]; then
+        echo -e "\033[34m$2\033[0m"
+    fi
+}
 
-# # ps -e|grep st|awk '{print $1}'|xargs kill -9
-# rm -rf ~/soft/st
-# mkdir -p ~/soft/st
-# cp -rf ${install_home}/st/* ~/soft/st
-# cd ~/soft/st
-# sudo make install
+function dwm() {
+    rm -rf ~/soft/dwm
+    mkdir -p ~/soft/dwm
+    cp -rf ${install_home}/dwm/* ~/soft/dwm
+    cd ~/soft/dwm
+    sudo make install
+    [ $? -eq 0 ] || error_modal[${#error_modal[*]}]="dwm"
+}
 
-cp -r ${install_home}/.xinitrc.d ~/
-cp ${install_home}/.xinitrc ~/.xinitrc
+function st() {
+    # ps -e|grep st|awk '{print $1}'|xargs kill -9
+    rm -rf ~/soft/st
+    mkdir -p ~/soft/st
+    cp -rf ${install_home}/st/* ~/soft/st
+    cd ~/soft/st
+    sudo make install
+    [ $? -eq 0 ] || error_modal[${#error_modal[*]}]="st"
+}
+
+function kill_xorg() {
+    ps -ef | grep Xorg | awk '{print $2}' | xargs kill -9
+}
+
+function other_env() {
+    cp -r ${install_home}/.xinitrc.d ~/
+    cp ${install_home}/.xinitrc ~/.xinitrc
+}
+
+kill_xorg
+dwm
+# st
+other_env
+
+echo
+echo
+(( ${#error_modal[*]} == 0 )) && cecho green "编译成功" || cecho red "编译失败(${error_modal})"
