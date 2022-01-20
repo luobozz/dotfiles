@@ -43,7 +43,7 @@ function other_env() {
 }
 
 kill_xorg
-dwm
+# dwm
 # st
 other_env
 
