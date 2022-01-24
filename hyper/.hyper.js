@@ -149,7 +149,7 @@ module.exports = {
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         //shellArgs: ['--login'],
-        shellArgs: ['~'],
+        shellArgs: ['-u','luobo'],
         // for environment variables
         env: {},
         // Supported Options:
