@@ -1,0 +1,62 @@
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 10
+    y: 15
+  decorations: none
+  startup_mode: Maximized
+  opacity: 0.9
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  size: 11
+  normal:
+    family: FiraMono NF
+  bold:
+    family: FiraMono NF
+  italic:
+    family: FiraMono NF
+  offset:
+    x: 0
+    y: 0
+
+key_bindings:
+  - { key: Insert, mods: Control, action: Copy }
+  - { key: Insert, mods: Shift, action: Paste }
+  - { key: D, mods: Control, action: CreateNewWindow }
+  - { key: D, mods: Control|Alt, action: Quit }
+
+# From the famous Cobalt2 sublime theme
+# Source : https://github.com/wesbos/cobalt2/tree/master/Cobalt2
+colors:
+  # Default colors
+  primary:
+    background: "#202734"
+    foreground: "#CBCCC6"
+
+  # Normal colors
+  normal:
+    black: "#191E2A"
+    red: "#FF3333"
+    green: "#BAE67E"
+    yellow: "#FFA759"
+    blue: "#73D0FF"
+    magenta: "#FFD580"
+    cyan: "#95E6CB"
+    white: "#C7C7C7"
+
+  # Bright colors
+  bright:
+    black: "#686868"
+    red: "#F27983"
+    green: "#A6CC70"
+    yellow: "#FFCC66"
+    blue: "#5CCFE6"
+    magenta: "#FFEE99"
+    cyan: "#95E6CB"
+    white: "#FFFFFF"
+theme: Ayu-Mirage
