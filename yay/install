@@ -1,0 +1,5 @@
+#!/bin/bash
+install_home=$(pwd)
+mkdir -p ${HOME}/soft/yay
+cp ${install_home}/* ${HOME}/soft/yay/
+cd ${HOME}/soft/yay && makepkg -si

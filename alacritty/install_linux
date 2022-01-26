@@ -1,0 +1,4 @@
+#!/bin/bash
+install_home=$(pwd)
+mkdir -p $HOME/.config/alacritty
+cp ${install_home}/alacritty.yml $HOME/.config/alacritty/alacritty.yml

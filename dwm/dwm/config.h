@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Constants */
-#define TERMINAL "alacritty"
+#define TERMINAL "st"
 // #define TERMCLASS "alacritty"
 
 /* appearance */
@@ -141,7 +141,7 @@ static Key keys[] = {
 	// dmenu
 	{ MODKEY,						XK_p,  	   spawn,          {.v= dmenucmd} },
 	//快捷启动
-	{ MODKEY,             		    XK_F1,      spawn,          SHCMD("chromium") },
+	{ MODKEY,             		    XK_F1,      spawn,          SHCMD("google-chrome-stable") },
 	{ MODKEY,                    	XK_F2,      spawn,          {.v = termcmd} },
 	{ MODKEY,             		    XK_F4,      spawn,          SHCMD("code") },
 	// 关闭当前窗口
