@@ -1,2 +1,8 @@
 Set shell = Wscript.createobject("wscript.shell")
-a = shell.run (".\heath_notice.bat",0)
+' Set currentpath = createobject("Scripting.FileSystemObject").GetFolder(".").Path
+strPath = Wscript.ScriptFullName
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+Set objFile = objFSO.GetFile(strPath)
+currentpath = objFSO.GetParentFolderName(objFile) 
+path=currentpath & "\heath_notice.bat"
+a = shell.run (path,0)
