@@ -4,7 +4,7 @@ function date_check() {
 }
 
 function acpi_check() {
-    acpi_info=$(acpi -b | awk '{ print $3, $4 }')
+    acpi_info=$(acpi -b 2>/dev/null | awk '{ print $3, $4 }')
     [[ -z "${acpi_info}" ]] && {
         echo " Full"
     } || {
@@ -65,17 +65,18 @@ item_array=("mem_check" "vol_check" "acpi_check" "date_check")
 # echo "${status_str}"
 
 while true; do
-    status_str=""
+    status_str=" "
     for ((i = 0; i < ${#item_array[*]}; i++)); do
         out="$(${item_array[i]})"
         [[ -n "${out}" ]] && {
-            ((${i} != 1)) && {
-                status_str="${status_str} | "
-            }
             status_str="${status_str}${out}"
         }
+        let index=${#item_array[*]}-1
+        ((${i} != ${index})) && {
+            status_str="${status_str} | "
+        }
     done
-    # xsetroot -name "${status_str}"
-    echo "${status_str}"
+    xsetroot -name "${status_str} "
+    # echo "${status_str}"
     sleep 1s
 done

@@ -1,5 +1,5 @@
 #!/bin/bash
-install_home=$(pwd)
+install_home=$(dirname $0)
 error_modal=()
 
 function cecho() {
@@ -42,9 +42,9 @@ function other_env() {
     cp ${install_home}/.xinitrc ~/.xinitrc
 }
 
-kill_xorg
-# dwm
-# st
+#kill_xorg
+#dwm
+#st
 other_env
 
 echo
