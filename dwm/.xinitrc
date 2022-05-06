@@ -11,7 +11,7 @@ fi
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
-export http_proxy=http://192.168.1.2:10809
-export https_proxy=http://192.168.1.2:10809
+# export http_proxy=http://192.168.1.2:10809
+# export https_proxy=http://192.168.1.2:10809
 fcitx &
 exec dwm & picom --no-vsync 
