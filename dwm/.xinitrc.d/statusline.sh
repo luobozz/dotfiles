@@ -1,6 +1,6 @@
 #!/bin/bash
 function date_check() {
-    echo " $(date +"%F %R:%S")"
+    echo " $(date +"%F %R:%S")"
 }
 
 function acpi_check() {
@@ -10,7 +10,7 @@ function acpi_check() {
     } || {
         case "${acpi_info}" in
         *)
-            echo "default (none of above)"
+            echo "default"
             ;;
         esac
     }

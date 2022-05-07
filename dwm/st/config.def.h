@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Mono:style=Bold:size=10:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Fira Mono:size=12:antialias=true:autohint=true";
+static int borderpx = 7;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -98,26 +98,41 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	// /* 8 normal colors */
+	// "black",
+	// "red3",
+	// "green3",
+	// "yellow3",
+	// "blue2",
+	// "magenta3",
+	// "cyan3",
+	// "gray90",
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
+	// /* 8 bright colors */
+	// "gray50",
+	// "red",
+	// "green",
+	// "yellow",
+	// "#5c5cff",
+	// "magenta",
+	// "cyan",
+	// "white",
+	"#080200",
+"#fa5e5b",
+"#16c98d",
+"#ffc83f",
+"#288ad6",
+"#d34590",
+"#28ddde",
+"#e7e7e7",
+"#6f6b68",
+"#fa5e5b",
+"#16c98d",
+"#feef6d",
+"#278ad6",
+"#d34590",
+"#27dede",
+"#ffffff",
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
