@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Mono:size=12:antialias=true:autohint=true";
+static char *font = "Meslo LG S DZ:style=Bold:size=12:antialias=true:autohint=true";
 static int borderpx = 7;
 
 /*
