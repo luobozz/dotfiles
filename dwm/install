@@ -44,8 +44,8 @@ function other_env() {
 
 #kill_xorg
 # dwm
-st
-# other_env
+# st
+other_env
 
 echo
 echo
