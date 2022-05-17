@@ -4,5 +4,10 @@ function clash(){
     ~/soft/clash/start-clash.sh
 }
 
+function blueman(){
+    nohup blueman-applet >/dev/null &
+}
+
 clash
+blueman
 
