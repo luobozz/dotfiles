@@ -13,5 +13,8 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export http_proxy=http://127.0.0.1:7892
 export https_proxy=http://127.0.0.1:7892
+export _JAVA_AWT_WM_NONREPARENTING=1 
+export AWT_TOOLKIT=MToolkit 
+wmname LG3D
 fcitx &
 exec dwm & picom --no-vsync 
