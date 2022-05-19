@@ -1,0 +1,45 @@
+{
+	// markdown
+	"标记思路专用": {
+		"scope": "markdown",
+		"prefix": "mk",
+		"body": [
+			"\n# $1",
+			"```",
+			"$2",
+			"```"
+		],
+	},
+	"标记问题专用1": {
+		"scope": "markdown",
+		"prefix": "mq1",
+		"body": [
+			"\n# Q: $1",
+			"```",
+			"$2",
+			"```"
+		],
+	},
+	"标记问题专用2": {
+		"scope": "markdown",
+		"prefix": "mq2",
+		"body": [
+			"\n# Q: $1",
+			">A: $2",
+		],
+	},
+	"修复型link": {
+		"scope": "markdown",
+		"prefix": "link",
+		"body": [
+			"[$1]($2)",
+		],
+	},
+	"修复型image": {
+		"scope": "markdown",
+		"prefix": "image",
+		"body": [
+			"![$1]($2)",
+		],
+	},
+}

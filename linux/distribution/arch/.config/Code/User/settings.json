@@ -1,0 +1,127 @@
+{
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.quickSuggestions": true
+    },
+    "editor.wordWrap": "on",
+    "html.format.wrapLineLength": 200,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "git.enableSmartCommit": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.remotePlatform": {
+        "192.168.1.42": "linux",
+        "192.168.1.46": "linux",
+        "127.0.0.1": "linux",
+        "192.168.1.37": "linux",
+        "192.168.31.205": "linux",
+        "122.112.142.111": "linux",
+        "106.12.149.234": "linux",
+        "192.168.1.49": "linux",
+        "119.3.141.1": "linux",
+        "119.3.108.48": "linux",
+        "192.168.1.85": "linux",
+        "192.168.1.54": "linux",
+        "192.168.1.16": "linux"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "shakram02.bash-beautify"
+    },
+    "editor.fontFamily": "Fira Mono,FiraMono NF",
+    "terminal.integrated.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "editor.fontWeight": 500,
+    "terminal.integrated.fontWeight": 500,
+    "[jsonc]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ],
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "java.showBuildStatusOnStart.enabled": true,
+    "editor.renderWhitespace": "none",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.autoGuessEncoding": true,
+    "files.associations": {
+        "*.yml": "yaml",
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html",
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "vue-helper.alias": {
+        "@": "src",
+        "@api": "src/api"
+    },
+    "vue-helper.componentPrefix": {
+        "alias": "@",
+        "path": "src"
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "editor.fontSize": 16,
+    "pathAlias.aliasMap": {
+        // key是你要定义的别名 | 使用${cwd}来代替当前工作目录的绝对路径
+        "@": "${cwd}/src",
+        "@api": "${cwd}/src/api",
+        "@comp": "${cwd}/src/components",
+    },
+    "maven.settingsFile": "D:\\soft-w\\maven\\conf\\settings.xml",
+    "maven.executable.path": "D:\\soft-w\\maven\\bin\\mvn",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "D:/code/luobo/my_javascript/leetcode",
+    "leetcode.defaultLanguage": "javascript",
+    "terminal.integrated.gpuAcceleration": "off",
+    "workbench.colorTheme": "5fb9c0a4-e613-457c-97a5-6204f9076cef",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "tabnine.experimentalAutoImports": true,
+    "files.autoSave": "onFocusChange",
+    "editor.autoClosingBrackets": "always",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=20000"
+    ],
+}

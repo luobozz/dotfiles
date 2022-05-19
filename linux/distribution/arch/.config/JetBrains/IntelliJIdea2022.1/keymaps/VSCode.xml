@@ -1,0 +1,18 @@
+<keymap version="1" name="VSCode 副本" parent="VSCode">
+  <action id="$Cut">
+    <keyboard-shortcut first-keystroke="ctrl x" />
+  </action>
+  <action id="EditorCut">
+    <keyboard-shortcut first-keystroke="ctrl x" />
+  </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="shift delete" />
+  </action>
+  <action id="Maven.Uml.Exclude" />
+  <action id="RecentLocations">
+    <keyboard-shortcut first-keystroke="shift ctrl alt e" />
+  </action>
+  <action id="ShowSettings">
+    <keyboard-shortcut first-keystroke="ctrl alt comma" />
+  </action>
+</keymap>

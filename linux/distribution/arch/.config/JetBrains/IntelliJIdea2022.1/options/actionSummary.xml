@@ -1,0 +1,112 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="ActivateTerminalToolWindow">
+      <i c="5" l="1652863503091" />
+    </e>
+    <e n="CheckForUpdate">
+      <i c="1" l="1652860670356" />
+    </e>
+    <e n="CloudConfigAction">
+      <i c="1" l="1652860687636" />
+    </e>
+    <e n="CloudConfigDisableAction">
+      <i c="1" l="1652862846783" />
+    </e>
+    <e n="CloudConfigSelfSettingsAction">
+      <i c="2" l="1652861345341" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="19" l="1652863442374" />
+    </e>
+    <e n="EditorCut">
+      <i c="1" l="1652861330345" />
+    </e>
+    <e n="EditorPaste">
+      <i c="1" l="1652861331632" />
+    </e>
+    <e n="Exit">
+      <i c="1" l="1652861628159" />
+    </e>
+    <e n="Find">
+      <i c="1" l="1652861320439" />
+    </e>
+    <e n="FindNext">
+      <i c="1" l="1652861315321" />
+    </e>
+    <e n="ImportSettings">
+      <i c="3" l="1652862858040" />
+    </e>
+    <e n="OpenFile">
+      <i c="2" l="1652933328154" />
+    </e>
+    <e n="QuickChangeScheme">
+      <i c="1" l="1652860235092" />
+    </e>
+    <e n="Register">
+      <i c="1" l="1652860644343" />
+    </e>
+    <e n="ShowSettings">
+      <i c="12" l="1652863519838" />
+    </e>
+    <e n="Synchronize">
+      <i c="1" l="1652861625199" />
+    </e>
+    <e n="Tree-selectNext">
+      <i c="26" l="1652933356897" />
+    </e>
+    <e n="Tree-selectPrevious">
+      <i c="5" l="1652933335075" />
+    </e>
+    <e n="Vcs.UpdateProject">
+      <i c="1" l="1652933371169" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1652860171568" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1652860188614" />
+    </e>
+    <e n="com.intellij.cloudConfig.CloudConfigDisableSyncAction">
+      <i c="1" l="1652860744602" />
+    </e>
+    <e n="com.intellij.cloudConfig.CloudConfigSyncPluginsAction">
+      <i c="1" l="1652861175237" />
+    </e>
+    <e n="com.intellij.cloudConfig.CloudConfigSyncPluginsSilentlyAction">
+      <i c="3" l="1652861520740" />
+    </e>
+    <e n="com.intellij.cloudConfig.CloudConfigSyncSettingsAction">
+      <i c="5" l="1652862189543" />
+    </e>
+    <e n="com.intellij.cloudConfig.CloudConfigWidget$1">
+      <i c="2" l="1652862902591" />
+    </e>
+    <e n="com.intellij.cloudConfig.CloudConfigWidget$2">
+      <i c="1" l="1652860751953" />
+    </e>
+    <e n="com.intellij.find.editorHeaderActions.SwitchToFind">
+      <i c="2" l="1652861321228" />
+    </e>
+    <e n="com.intellij.grazie.ide.notification.GrazieToastNotifications$showMissedLanguages$1">
+      <i c="1" l="1652862728131" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1652861335315" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$4">
+      <i c="3" l="1652933392898" />
+    </e>
+    <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
+      <i c="1" l="1652861311188" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1652861279344" />
+    </e>
+    <e n="editRunConfigurations">
+      <i c="1" l="1652861823914" />
+    </e>
+    <e n="org.jetbrains.plugins.terminal.AbstractTerminalRunner$2">
+      <i c="2" l="1652863541762" />
+    </e>
+  </component>
+</application>

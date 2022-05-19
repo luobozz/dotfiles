@@ -1,0 +1,201 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="camel-admin-web" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/station/station.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="Markdown">
+      <summary usageCount="7" lastUsed="1652933306814" />
+    </fileType>
+    <fileType name="Vue.js">
+      <summary usageCount="9" lastUsed="1652933307481" />
+    </fileType>
+    <fileType name="WebPreview">
+      <summary usageCount="1" lastUsed="1652862553046" />
+    </fileType>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="camel-admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camel-admin-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camel-admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camel-admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camel-admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camel-admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camel-admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camel-admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="station" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local (2)" currentWorkingDirectory="$PROJECT_DIR$" commandHistoryFileName="camel-admin-web-history2" />
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2092000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layout>
+      <window_info id="Bookmarks" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" show_stripe_button="false" weight="0.3299517" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Problems View" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3299517" />
+      <window_info anchor="bottom" id="Endpoints" order="8" />
+      <window_info anchor="bottom" id="Services" order="9" />
+      <window_info anchor="bottom" id="Profiler" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="RestfulTool" order="1" />
+      <window_info anchor="right" id="Notifications" order="2" weight="0.25" />
+    </layout>
+    <recentWindows>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Notifications</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="437" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652861825451">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="437" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1652861825451" />
+    <state x="706" y="432" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1652862863289">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="706" y="432" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1652862863289" />
+    <state x="719" y="304" key="FileChooserDialogImpl" timestamp="1652933359190">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="719" y="304" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1652933359190" />
+    <state width="1848" height="313" key="GridCell.Tab.0.bottom" timestamp="1652862256844">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1652862256843" />
+    <state width="1848" height="313" key="GridCell.Tab.0.center" timestamp="1652862256843">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="313" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1652862256843" />
+    <state width="1848" height="313" key="GridCell.Tab.0.left" timestamp="1652862256843">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="313" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1652862256843" />
+    <state width="1848" height="313" key="GridCell.Tab.0.right" timestamp="1652862256843">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="313" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1652862256843" />
+    <state x="451" y="196" key="SettingsEditor" timestamp="1652863540119">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="451" y="196" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1652863540119" />
+    <state x="824" y="419" key="cloudConfig.SelfSettingsDialog" timestamp="1652862206200">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="824" y="419" key="cloudConfig.SelfSettingsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1652862206200" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/station/station.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

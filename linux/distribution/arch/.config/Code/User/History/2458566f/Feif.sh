@@ -1,0 +1,1 @@
+google-chrome-stable --new-window --allow-file-access-from-files ~/soft/clash/clash-setting-home/index.html

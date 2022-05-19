@@ -1,0 +1,2 @@
+com.intellij.zh
+io.github.qeesung.component.HighlightBracketPair

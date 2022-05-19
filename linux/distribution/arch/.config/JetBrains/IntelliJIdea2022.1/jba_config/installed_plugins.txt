@@ -1,0 +1,15 @@
+net.vektah.codeglance
+github.cweijan.test-theme
+com.thvardhan.gradianto
+com.markskelton.one-dark-theme
+com.intellij.plugins.vscodekeymap
+GsonFormatPlus
+org.jetbrains.plugins.vue
+com.mallowigi
+cn.cloud.auto.restful.tool
+cn.wuzhizhan.plugin.mybatis
+zielu.gittoolbox
+izhangzhihao.rainbow.brackets
+cn.yiiguxing.plugin.translate
+com.intellij.zh
+io.acari.DDLCTheme

@@ -1,0 +1,1 @@
+google-chrome-stable --allow-file-access-from-files ~/soft/clash/clash-config/index.html

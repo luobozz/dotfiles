@@ -1,0 +1,47 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/code/luobo/dotfiles-bk">
+          <value>
+            <RecentProjectMetaInfo frameTitle="dotfiles-bk – README.md" projectWorkspaceId="29KSJML2RocfVD5qer7VWCGRMes">
+              <option name="activationTimestamp" value="1652861501687" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652209011111" />
+              <frame x="10" y="29" width="1894" height="1035" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1652860618934" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/organization/cpms/camel-admin-web">
+          <value>
+            <RecentProjectMetaInfo frameTitle="camel-admin-web – station.vue" projectWorkspaceId="29KUvdfNMWipBrbBDSl6VDcHsBZ">
+              <option name="activationTimestamp" value="1652933361873" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208960033" />
+              <frame x="10" y="29" width="1894" height="1035" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1652861643973" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/luobo/notes">
+          <value>
+            <RecentProjectMetaInfo frameTitle="notes – README.md" opened="true" projectWorkspaceId="29MqaW1enQcOmswBXnlgR0fmSQc">
+              <option name="activationTimestamp" value="1652933392088" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208968342" />
+              <frame x="10" y="29" width="1894" height="1035" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1652933365286" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

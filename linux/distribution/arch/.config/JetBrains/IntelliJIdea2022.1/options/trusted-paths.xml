@@ -1,0 +1,11 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/code/luobo/dotfiles-bk" value="true" />
+        <entry key="$USER_HOME$/code/luobo/notes" value="true" />
+        <entry key="$USER_HOME$/code/organization/cpms/camel-admin-web" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

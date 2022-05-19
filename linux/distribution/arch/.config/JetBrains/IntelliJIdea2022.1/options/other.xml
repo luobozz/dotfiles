@@ -1,0 +1,84 @@
+<application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="29KSJML2RocfVD5qer7VWCGRMes">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29KUvdfNMWipBrbBDSl6VDcHsBZ">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29MqaW1enQcOmswBXnlgR0fmSQc">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="FiraMono Nerd Font Mono" />
+    <option name="fontScale" value="1.0" />
+    <option name="fontSize" value="14.0" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.se.text.search": "true",
+    "SettingsSearchHistory": "terminal",
+    "appcds.runOnSecondStart": "IU-221.5591.52-76a568997c9c4f9a0791a4dee4ab34624bed958241334cb912a763580e8c792f",
+    "bundled.plugins.list.saved.version": "IU-221.5591.52",
+    "cn.yiiguxing.plugin.translate.version": "3.3.2",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "com.intellij.ide.wizard.NewProjectWizardLanguageStep.selectedStep": "Java",
+    "defaultJdkConfigured": "true",
+    "eclipse.projects.detected": "",
+    "file.gist.reindex.count": "18",
+    "fileTypeChangedCounter": "4",
+    "got.it.tooltip.cwm.invitation.notification": "1",
+    "got.it.tooltip.terminal.smart_command_execution": "1",
+    "gotit.previous.run": "IU-221.5591.52",
+    "ide.memory.adjusted": "true",
+    "ide.updates.whats.new.shown.for": "221",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "221-1.6.21-release-337-IJ5591.52",
+    "io.unthrottled.doki.background": "file:///home/el/.config/JetBrains/IntelliJIdea2022.1/dokiThemeAssets/backgrounds/shima_rin_dark.png,100,SCALE,MIDDLE_RIGHT",
+    "last_opened_file_path": "/home/el/settings.zip",
+    "project.wizard.group": "newWizard.com.intellij.ide.wizard.NewProjectBuilder",
+    "registry.to.advanced.settings.migration.build": "IU-221.5591.52",
+    "tasks.pass.word.conversion.enforced": "true",
+    "ts.lib.d.ts.version": "4.6.3"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/el/code/luobo/notes",
+      "/home/el/settings.zip",
+      "/home/el/code/organization/cpms/camel-admin-web",
+      "/home/el/code/luobo/dotfiles-bk"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="camel-admin-web-history2" project-path="$USER_HOME$/code/organization/cpms/camel-admin-web" last-access-time="1652933310274" />
+      <command-history-file filename="dotfiles-bk-history" project-path="$USER_HOME$/code/luobo/dotfiles-bk" last-access-time="1652861261336" />
+    </command-history-files>
+  </component>
+</application>

@@ -1,0 +1,178 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="dotfiles-bk" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zsh/.zshrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zsh/.zshrc_back">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zsh/install">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zsh/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="Markdown">
+      <summary usageCount="5" lastUsed="1652861395788" />
+    </fileType>
+    <fileType name="PLAIN_TEXT">
+      <summary usageCount="1" lastUsed="1652861393849" />
+    </fileType>
+    <fileType name="Shell Script">
+      <summary usageCount="1" lastUsed="1652861394781" />
+    </fileType>
+    <fileType name="WebPreview">
+      <summary usageCount="1" lastUsed="1652861225495" />
+    </fileType>
+    <fileType name="textmate">
+      <summary usageCount="2" lastUsed="1652861392846" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/zsh/.zshrc" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dotfiles-bk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dotfiles-bk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dotfiles-bk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dotfiles-bk" type="462c0819:PsiDirectoryNode" />
+              <item name="zsh" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$" commandHistoryFileName="dotfiles-bk-history" />
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="872000" />
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layout>
+      <window_info id="Bookmarks" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2468321" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Problems View" order="6" weight="0.3300926" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3299517" />
+      <window_info anchor="bottom" id="Endpoints" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Services" order="9" weight="0.3300926" />
+      <window_info anchor="bottom" id="Profiler" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="RestfulTool" order="1" />
+      <window_info anchor="right" id="Notifications" order="2" weight="0.25" />
+    </layout>
+    <recentWindows>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Notifications</value>
+      <value>Services</value>
+      <value>Problems View</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="745" y="319" key="FileChooserDialogImpl" timestamp="1652861498381">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="745" y="319" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1652861498381" />
+    <state x="451" y="196" key="SettingsEditor" timestamp="1652861391809">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="451" y="196" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1652861391809" />
+    <state x="703" y="401" key="cloudConfig.PluginsDialog" timestamp="1652861178103">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="703" y="401" key="cloudConfig.PluginsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1652861178103" />
+    <state x="827" y="413" width="265" height="254" key="cloudConfig.SelfSettingsDialog" timestamp="1652861347792">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="827" y="413" width="265" height="254" key="cloudConfig.SelfSettingsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1652861347792" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zsh/.zshrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zsh/.zshrc_back">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zsh/install">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zsh/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+    </entry>
+  </component>
+</project>
