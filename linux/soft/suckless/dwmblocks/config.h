@@ -1,7 +1,9 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/			/*Update Interval*/	/*Update Signal*/
-	{"",		"dwmblock-date",	10,					26},
+	{"",		"dwmblock-computer-status",	2,					1},
+	{"",		"dwmblock-hardware-status",	2,					2},
+	{"",		"dwmblock-date",	1,					3},
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.
