@@ -13,6 +13,11 @@
     yay -S wechat-uos
     ```
 - install wechat `yay -S wechat-uos`
-- install iea `yay -S vscode`
+- install iea 
+  
+  ```
+  yay -S vscode jetbrains-toolbox
+  # dwm idea的bug [https://blog.csdn.net/u010563350/article/details/104948256](https://blog.csdn.net/u010563350/article/details/104948256)
+  ```
 
 pavucontrol
