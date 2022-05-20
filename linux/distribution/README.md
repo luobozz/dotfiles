@@ -14,3 +14,5 @@
     ```
 - install wechat `yay -S wechat-uos`
 - install iea `yay -S vscode`
+
+pavucontrol

@@ -1,9 +1,0 @@
-#!/bin/bash
-install_home=$(pwd)
-[[ "${1}" == "-r" ]] && {
-    echo "-r"
-    patch -RE < ${install_home}/patches/patch.diff
-} || {
-    wget -O ${install_home}/patches/patch.diff $1
-    patch < ${install_home}/patches/patch.diff
-}
