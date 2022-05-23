@@ -1,0 +1,8 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    1) notify-send "月份信息" "$(cal --color=always | sed "s/..7m/<b><span color=\"red\">/;s/..27m/<\/span><\/b>/")" && notify-send "Appointments" "$(calcurse -D ~/.config/calcurse -d3)" ;;
+    3) dwmblocktools-exec 'st -e calcurse' ;;
+    6) "code" "$0";;
+esac
+
+echo "1 $(date +"%F %R:%S") "

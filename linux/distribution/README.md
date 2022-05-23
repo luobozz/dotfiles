@@ -2,6 +2,10 @@
 
 ## arch
 - install WM `yay -S picom feb acpi dmenu`
+
+- install dwmblocks
+  - `yay -S calcurse`
+
 - install 输入法 
   ```
   #fcitx4
@@ -9,8 +13,14 @@
   #fcitx5
   sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons fcitx5-material-color
   ```
+
 - install 蓝牙`sudo pacman -S bluez bluez-utils blueman pulseaudio-bluetooth`
+
+- install git
+  - lazygitt
+
 - install pip3  `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py`
+
 - install qq和微信 
     
     ```
@@ -18,7 +28,9 @@
     yay -S linuxqq
     yay -S wechat-uos
     ```
+
 - install wechat `yay -S wechat-uos`
+
 - install iea 
   
   ```
