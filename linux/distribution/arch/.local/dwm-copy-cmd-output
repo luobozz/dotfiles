@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# tmpfile="/home/laughing/test/cmd_test4.txt"
+tmpfile=$(mktemp /tmp/st-cmd-output.XXXXXX)
+trap 'rm "$tmpfile"' 0 1 15
+sed -n "w $tmpfile"
+sed -i 's/\x0//g' "$tmpfile"
+
+# find command prompt
+base=$(grep "\S" "$tmpfile" | tail -n 1 | sed 's/^\s*//' | cut -d' ' -f1) # (base)
+
+chosen="$(grep -F "$base" "$tmpfile" | sed '$ d' | tac |
+	dmenu -p "Copy which command's output?" -i -l 10 |
+	sed 's/[0-9]\+:[0-9]\+:[0-9]\+//g; s/✗//g')"
+
+head="$(echo $chosen | awk '{print $1" "$2}')" # (base) ➜
+
+if echo $chosen | grep -q "git:(\S\+)"; then
+	command="$(echo $chosen |
+		awk -F " " '{for (i=5;i<=(NF);i++)printf("%s ", $i);print ""}')"
+	# sed 's/^(.*)//g; s/[0-9]\+:[0-9]\+:[0-9]\+//g')"
+	dir="$(echo $chosen | awk '{print $3" "$4}')" # dir git:(master)
+else
+	command="$(echo $chosen |
+		awk -F " " '{for (i=4;i<=(NF);i++)printf("%s ", $i);print ""}')"
+	dir="$(echo $chosen | awk '{print $3}')" # dir git:(master)
+fi
+
+# echo $head
+# echo $dir
+# echo $command
+total="$head\s*$dir\s*✗*\s*$command" # (base) ➜ dir [✗] command
+total="$(echo $total | sed 's/(/\\(/g; s/)/\\)/g;')"
+base="$(echo $base | sed 's/(/\\(/g; s/)/\\)/g;')"
+# echo $base
+# echo $total
+
+# awk "/^$total/{p=1;print;next} p&&/$base/{p=0};p" "$tmpfile" | xclip -selection clipboard
+echo "$(awk "/^$total/{p=1;print;next} p&&/$base/{p=0};p" "$tmpfile")" | xclip -selection clipboard

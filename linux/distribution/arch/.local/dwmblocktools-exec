@@ -1,0 +1,17 @@
+#!/bin/bash
+cmd=$1
+exist=$(command -v $cmd)
+if [ -z "${exist}" ]; then
+    send="${cmd}命令不存在，请安装"
+    notify-send $send
+    exit
+fi
+count=`ps -ef | grep "${cmd}" | grep -v "grep" |grep -v "dwmblocktools-exec" | wc -l`
+
+# ps -ef | grep "${cmd}"
+if [[ $count == 0 ]];then
+    # echo $count
+    $cmd
+else
+    ps -ef | grep "$cmd" | grep -v "grep" |grep -v "dwmblocktools-exec" | awk '{print $2}' | xargs kill -9
+fi

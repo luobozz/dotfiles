@@ -1,0 +1,8 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    1) "pkill" "-HUP" "dwm";;
+    3) notify-send "mebi";;
+    6) "code" "$0";;
+esac
+
+echo " "

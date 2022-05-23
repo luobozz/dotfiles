@@ -1,0 +1,22 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    3) "dwmblocktools-exec" "pavucontrol";;
+    6) "code" "$0";;
+esac
+
+function vol_check() {
+    vol_info=$(pamixer --get-volume 2>>/dev/null)
+    [[ -z "${vol_info}" ]] && {
+        echo " 100"
+        } || {
+        if [ "$vol" -gt "70" ]; then
+            echo " $vol"
+            elif [ "$vol" -lt "30" ]; then
+            echo " $vol"
+        else
+            echo " $vol"
+        fi
+    }
+}
+
+vol_check
