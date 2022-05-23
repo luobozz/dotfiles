@@ -16,5 +16,6 @@ export https_proxy=http://127.0.0.1:7892
 export _JAVA_AWT_WM_NONREPARENTING=1 
 export AWT_TOOLKIT=MToolkit 
 wmname LG3D
-fcitx &
+fcitx5 &
+dunst &
 exec dwm & picom --no-vsync 
