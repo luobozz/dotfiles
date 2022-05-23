@@ -17,7 +17,8 @@
 - install 蓝牙`sudo pacman -S bluez bluez-utils blueman pulseaudio-bluetooth`
 
 - install git
-  - lazygitt
+  - git `yay -S git`
+  - lazygit `yay -S lazygit`
 
 - install pip3  `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py`
 
