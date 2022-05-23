@@ -2,9 +2,10 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/			/*Update Interval*/	/*Update Signal*/
 	{"",		"echo ' '",					0,					1},
-	{"",		"dwmblock-mem",	2,					2},
-	{"",		"dwmblock-video",	2,					3},
+	{"",		"dwmblock-mem",				2,					2},
+	{"",		"dwmblock-video",			2,					3},
 	{"",		"dwmblock-date",			1,					4},
+	{"",		"dwmblock-refresh",			0,					5},
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.
