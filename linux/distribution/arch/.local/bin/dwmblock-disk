@@ -12,11 +12,13 @@ case $BLOCK_BUTTON in
 esac
 # u盘
 for location in $usbroot/*; do
-    locations[${#locations[*]}]=$location
+    if [ -e "${location}" ]; then
+        locations[${#locations[*]}]=$location
+    fi    
 done
 
 for location in ${locations[@]}; do
-	ficon=$icon
+    ficon=$icon
     if [[ "${location}" == *"${usbroot}"* ]]; then
         ficon=$usb_icon
     fi
