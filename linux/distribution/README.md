@@ -6,6 +6,7 @@
 
 - install dwmblocks
   - `yay -S calcurse`
+  - `yay -S pamixer`
 
 - install 输入法 
   ```

@@ -1,0 +1,31 @@
+#!/bin/bash
+# case $BLOCK_BUTTON in
+#     3) "dwmblocktools-exec" "pavucontrol";;
+# 	4) pamixer --allow-boost -i 1;;
+# 	5) pamixer --allow-boost -d 1;;
+#     6) "code" "$0";;
+# esac
+wifi_off=睊
+wifi_on=直
+ethernet_off=
+ethernet_on=
+vpn=
+
+case $BLOCK_BUTTON in
+    1) notify-send "网络连接" "${wifi_off}: WIFI未连接
+${wifi_on}: 高质量的wifi连接
+${ethernet_off}: 无以太网
+${ethernet_on}: 以太网连接
+${vpn}: VPN连接中
+    " ;;
+    3) "dwmblocktools-exec" "st -e nmtui";;
+    6) "code" "$0";;
+esac
+
+#TODO 重新编写wifi逻辑
+case "$(cat /sys/class/net/w*/operstate 2>/dev/null)" in
+    down) wifiicon=wifi_off ;;
+    up) wifiicon="$(awk '/^\s*w/ { print "直", int($3 * 100 / 70) "% " }' /proc/net/wireless)" ;;
+esac
+
+printf "%s%s%s\n" "$wifiicon" "$(sed "s/down/${ethernet_off}/;s/up/${ethernet_on}/" /sys/class/net/e*/operstate 2>/dev/null)" "$(sed "s/.*/${vpn}/" /sys/class/net/tun*/operstate 2>/dev/null)"

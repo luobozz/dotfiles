@@ -1,7 +1,11 @@
 #!/bin/bash
 case $BLOCK_BUTTON in
-    1) notify-send "mebi";;
+    1) notify-send "内存消耗" "$(ps axch -o cmd:15,%mem --sort=-%mem | head)" ;;
+    3) dwmblocktools-exec 'st -e htop' ;;
     6) "code" "$0";;
 esac
 
-echo $(free --mebi | sed -n '2{p;q}' | awk '{printf (" %2.2fGiB/%2.2fGiB\n", ( $3 / 1024), ($2 / 1024))}')
+mem_info=$(free --mebi | sed -n '2{p;q}'| awk '{printf ("%.f %2.2f %2.2f\n",($3/$2*100),( $3 / 1024), ($2 / 1024))}')
+process=$(echo ${mem_info} | awk '{printf ("%s",$1)}')
+# process_sign=$(dwmblocktools-process-bar $process)
+echo " $(dwmblocktools-process-bar $process)$(echo $mem_info | awk '{printf ("%sGib/%sGib\n",$2, $3)}')"  

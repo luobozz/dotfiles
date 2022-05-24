@@ -1,0 +1,27 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    3) "dwmblocktools-exec" "pavucontrol";;
+    4) pamixer --allow-boost -i 1;;
+    5) pamixer --allow-boost -d 1;;
+    6) "code" "$0";;
+esac
+
+MUTED=$(pamixer --get-mute)
+VOL=$(pamixer --get-volume)
+
+if [ "$MUTED" = true ]; then
+    printf "婢:%s%%" "$VOL"
+    return
+fi
+
+if [[ -z "${VOL}" ]]; then
+    printf "婢:error"
+else
+    if (( VOL == 0 )); then
+        printf "婢:%s%%" "$VOL"
+        elif (( VOL > 0 )) && (( VOL < 50 )); then
+        printf ":%s%%" "$VOL"
+    else
+        printf ":%s%%" "$VOL"
+    fi
+fi

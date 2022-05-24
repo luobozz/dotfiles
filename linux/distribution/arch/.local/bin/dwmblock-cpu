@@ -1,20 +1,21 @@
 #!/bin/bash
-case $BLOCK_BUTTON in
-    1) notify-send "CPU消耗" "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)\\n(100% per core)" ;;
-    3) dwmblocktools-exec 'st -e htop' ;;
-    6) "code" "$0";;
-esac
-
 cache=~/tmp/cpubarscache
 # 当次上次提取对比
 stats=$(awk '/cpu[0-9]+/ {printf "%d %d %d\n", substr($1,4), ($2 + $3 + $4 + $5), $5 }' /proc/stat)
 [ ! -f $cache ] && echo "$stats" >"$cache"
 old=$(cat "$cache")
 echo "$stats" >"$cache"
+icon=""
+
+case $BLOCK_BUTTON in
+    1) notify-send "CPU消耗" "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)\\n(100% per core)";;
+    3) dwmblocktools-exec 'st -e htop' ;;
+    6) "code" "$0";;
+esac
 
 # 动画呈现
 function aniCPU(){
-    aniCpu=" "
+    aniCpu="${icon} "
     let count=$(echo "$stats"|wc -l)-1
     echo "$stats" | while read -r row; do
         id=${row%% *}
@@ -44,7 +45,18 @@ function aniCPU(){
 
 # 总的CPU利用率统计
 function totalCPU(){
-
+    coreCount=$(echo "$stats"|wc -l)
+    oldIdelCount=$(echo "$old" | awk '{sum+=$3}END{print sum}')
+    oldTotalCount=$(echo "$old" | awk '{sum+=$2}END{print sum}')
+    statsdelCount=$(echo "$stats" | awk '{sum+=$3}END{print sum}')
+    statsTotalCount=$(echo "$stats" | awk '{sum+=$2}END{print sum}')
+    # oldTotalCount=$(awk '{sum+=$2}END{print sum}' $old)
+    let calcT=$statsTotalCount-$oldTotalCount
+    let calcI=$statsdelCount-$oldIdelCount
+    let used=$calcT-$calcI
+    cpuRate=$(echo $used $calcT | awk '{printf("%.2f\n",$1/$2*100)}')
+    cpuRateI=$(echo $cpuRate | awk '{printf("%.f\n",$1)}')
+    echo "${icon} $(dwmblocktools-process-bar $cpuRateI)${cpuRate}%/${coreCount}核"  
 }
 
-aniCPU
+totalCPU

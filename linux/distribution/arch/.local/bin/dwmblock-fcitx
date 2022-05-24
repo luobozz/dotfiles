@@ -1,0 +1,16 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    3) "dwmblocktools-exec" "fcitx5-config-qt";;
+    6) "code" "$0";;
+esac
+
+fcitx_status=$(fcitx5-remote)
+
+case $fcitx_status in
+    0) fcitx_icon="" ;;
+    1) fcitx_icon="" ;;
+    2) fcitx_icon="拼" ;;
+esac
+
+
+echo ${fcitx_icon}
