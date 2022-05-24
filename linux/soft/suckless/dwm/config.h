@@ -142,7 +142,7 @@ static Key keys[] = {
 	// dmenu
 	{ MODKEY,						XK_p,  	   spawn,          {.v= dmenucmd} },
 	//快捷启动
-	{ MODKEY,             		    XK_F1,      spawn,          SHCMD("google-chrome-stable") },
+	{ MODKEY,             		    XK_F1,      spawn,          SHCMD("google-chrome-stable --allow-file-access-from-files") },
 	{ MODKEY,                    	XK_F2,      spawn,          {.v = termcmd} },
 	{ MODKEY,             		    XK_F4,      spawn,          SHCMD("code") },
 	// 关闭当前窗口
