@@ -1,0 +1,12 @@
+#!/bin/bash
+result=$($1)
+subcmd=$2
+
+if [[ "${subcmd}" == "frontspace" ]]; then
+    frontspace=" "
+elif [[ "${subcmd}" == "backspace" ]]; then
+    backspace=" "
+fi
+
+# echo "${frontspace}[${result}]${backspace}"
+echo "${frontspace}${result} ${backspace}"

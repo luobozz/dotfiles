@@ -1,0 +1,50 @@
+#!/bin/bash
+case $BLOCK_BUTTON in
+    1) notify-send "CPU消耗" "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)\\n(100% per core)" ;;
+    3) dwmblocktools-exec 'st -e htop' ;;
+    6) "code" "$0";;
+esac
+
+cache=~/tmp/cpubarscache
+# 当次上次提取对比
+stats=$(awk '/cpu[0-9]+/ {printf "%d %d %d\n", substr($1,4), ($2 + $3 + $4 + $5), $5 }' /proc/stat)
+[ ! -f $cache ] && echo "$stats" >"$cache"
+old=$(cat "$cache")
+echo "$stats" >"$cache"
+
+# 动画呈现
+function aniCPU(){
+    aniCpu=" "
+    let count=$(echo "$stats"|wc -l)-1
+    echo "$stats" | while read -r row; do
+        id=${row%% *}
+        rest=${row#* }
+        total=${rest%% *}
+        idle=${rest##* }
+        pt="$(echo "$old" | awk '{if ($1 == id)
+            printf "%d\n", (1 - (idle - $3)  / (total - $2))*100 /12.5}' \
+            id="$id" total="$total" idle="$idle")"
+        case $pt in     
+                "0") aniCpu="${aniCpu}▁" ;;
+                "1") aniCpu="${aniCpu}▂" ;;
+                "2") aniCpu="${aniCpu}▃" ;;
+                "3") aniCpu="${aniCpu}▄" ;;
+                "4") aniCpu="${aniCpu}▅" ;;
+                "5") aniCpu="${aniCpu}▆" ;;
+                "6") aniCpu="${aniCpu}▇" ;;
+                "7") aniCpu="${aniCpu}█" ;;
+                "8") aniCpu="${aniCpu}█" ;;
+        esac
+
+       if (( $id == $count )); then
+           echo $aniCpu
+       fi
+    done
+}
+
+# 总的CPU利用率统计
+function totalCPU(){
+
+}
+
+aniCPU

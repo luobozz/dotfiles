@@ -5,15 +5,17 @@ case $BLOCK_BUTTON in
     6) "code" "$0";;
 esac
 
-week=$(date '+%w')
-case "$week" in
-    "0") cweek="周一" ;;
-    "1") cweek="周二" ;;
-    "2") cweek="周三" ;;
-    "3") cweek="周四" ;;
-    "4") cweek="周五" ;;
-    "5") cweek="周六" ;;
-    "6") cweek="周日" ;;
-esac
+clock=$(date '+%H')
+if (( clock < 8 )); then
+    sign="晚安"
+elif (( clock < 12 )); then
+    sign="早上好"
+elif (( clock < 14 )); then
+    sign="中午好"
+elif (( clock < 18 )); then
+    sign="下午好"
+else
+    sign="晚上好"
+fi
 
-echo " $(date +"%Y年%-m月%-d日/$cweek")"
+echo " $sign $(date +"%R:%S")"
