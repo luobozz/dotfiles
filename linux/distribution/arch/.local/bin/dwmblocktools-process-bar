@@ -3,14 +3,16 @@ rate=$1
 front="["
 back="]"
 if (( rate <= 10 )); then
-    echo "${front}■     ${back}"
+    echo "${front}      ${back}"
     elif (( rate <= 20 )); then
-    echo "${front}■■    ${back}"
+    echo "${front}■     ${back}"
     elif (( rate <= 40 )); then
-    echo "${front}■■■   ${back}"
+    echo "${front}■■    ${back}"
     elif (( rate <= 60 )); then
-    echo "${front}■■■■  ${back}"
+    echo "${front}■■■   ${back}"
     elif (( rate <= 80 )); then
+    echo "${front}■■■■  ${back}"
+    elif (( rate <= 90 )); then
     echo "${front}■■■■■ ${back}"
 else
     echo "${front}■■■■■■${back}"

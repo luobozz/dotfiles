@@ -1,0 +1,28 @@
+#!/bin/sh
+
+locations=("/")
+icon=""
+usb_icon=""
+echores=""
+usbroot="/media"
+
+case $BLOCK_BUTTON in
+    1) notify-send "硬盘空间情况" "$(df -h --output=target,used,size)" ;;
+    6) "code" "$0";;
+esac
+# u盘
+for location in $usbroot/*; do
+    locations[${#locations[*]}]=$location
+done
+
+for location in ${locations[@]}; do
+	ficon=$icon
+    if [[ "${location}" == *"${usbroot}"* ]]; then
+        ficon=$usb_icon
+    fi
+    lres=$(printf "[$ficon%s %s]\n" "$location" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "|" $2}')")
+    echores="${echores} ${lres}"
+    # echo $lres
+done
+# printf "%s:%s\n" "$location" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "/" $2}')"
+echo $echores

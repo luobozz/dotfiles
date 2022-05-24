@@ -18,7 +18,7 @@ esac
 
 clock=$(date '+%H')
 if (( clock < 8 )); then
-    sign="晚安"
+    sign="凌晨了,早点休息"
 elif (( clock < 12 )); then
     sign="早上好"
 elif (( clock < 14 )); then

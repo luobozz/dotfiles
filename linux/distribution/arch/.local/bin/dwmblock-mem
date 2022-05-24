@@ -8,4 +8,4 @@ esac
 mem_info=$(free --mebi | sed -n '2{p;q}'| awk '{printf ("%.f %2.2f %2.2f\n",($3/$2*100),( $3 / 1024), ($2 / 1024))}')
 process=$(echo ${mem_info} | awk '{printf ("%s",$1)}')
 # process_sign=$(dwmblocktools-process-bar $process)
-echo " $(dwmblocktools-process-bar $process)$(echo $mem_info | awk '{printf ("%sGib/%sGib\n",$2, $3)}')"  
+echo "$(dwmblocktools-process-bar $process)$(echo $mem_info | awk '{printf ("%sGib/%sGib\n",$2, $3)}')"  

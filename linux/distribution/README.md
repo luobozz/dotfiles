@@ -2,11 +2,19 @@
 
 ## arch
 - install WM 
+  
   `yay -S picom feb acpi dmenu`
 
 - install dwmblocks
-  - `yay -S calcurse`
-  - `yay -S pamixer`
+  ```
+  #日历
+  yay -S calcurse
+  #音频
+  yay -S pamixer
+  #U盘自动挂载
+  yay -S udisks
+  yay -S udevil
+  ```
 
 - install 输入法 
   ```
@@ -17,13 +25,20 @@
   ```
 
 - install 蓝牙
+  
   `sudo pacman -S bluez bluez-utils blueman pulseaudio-bluetooth`
 
 - install git
-  - git `yay -S git`
-  - lazygit `yay -S lazygit`
+  
+  ```
+  #git
+  `yay -S git`
+  #lazygit
+  `yay -S lazygit`
+  ```
 
 - install pip3  
+  
   `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py`
 
 - install qq和微信 
@@ -35,6 +50,7 @@
     ```
 
 - install wechat 
+  
   `yay -S wechat-uos`
 
 - install iea 
