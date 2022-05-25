@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+# print("te")
+import argparse
+import requests
+import json
+
+def clashProxiesNow():
+    req=requests.get("http://127.0.0.1:9090/proxies",timeout=1)
+    print(json.loads(req.text)["proxies"]["🚀代理线路"]["now"])
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='clash config helper')
+    parser.add_argument('-c', "--clashProxy", action='store_true', help='查看默认代理状态')
+    args = parser.parse_args()
+    if args.clashProxy:
+        clashProxiesNow()
+    else:
+        parser.print_help()

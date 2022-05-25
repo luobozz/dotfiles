@@ -60,3 +60,4 @@ function totalCPU(){
 }
 
 totalCPU
+# aniCPU

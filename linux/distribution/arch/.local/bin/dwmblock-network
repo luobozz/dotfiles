@@ -1,10 +1,4 @@
 #!/bin/bash
-# case $BLOCK_BUTTON in
-#     3) "dwmblocktools-exec" "pavucontrol";;
-# 	4) pamixer --allow-boost -i 1;;
-# 	5) pamixer --allow-boost -d 1;;
-#     6) "code" "$0";;
-# esac
 wifi_off=睊
 wifi_on=直
 ethernet_off=

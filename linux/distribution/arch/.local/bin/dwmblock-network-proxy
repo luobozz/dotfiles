@@ -1,0 +1,22 @@
+#!/bin/bash
+proxy_off=
+proxy_on=
+
+case $BLOCK_BUTTON in
+    3) "sh" "$HOME/soft/clash/setting-config.sh";;
+    6) "code" "$0";;
+esac
+
+
+if [[ -z "$(echo $all_proxy)" ]]; then
+    echo $proxy_off
+else
+    if [[ -z "$(ps -ef | grep clash | grep -v grep | awk '{print $2}')" ]]; then
+        echo "${proxy_off}e" && exit
+    fi
+    clashProxy=$(dwmblocktools-clashconfig -c)
+    if [[ "${clashProxy}" == "不代理" ]]; then
+        echo $proxy_off && exit
+    fi
+    echo $proxy_on
+fi

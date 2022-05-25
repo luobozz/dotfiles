@@ -22,7 +22,7 @@ for location in ${locations[@]}; do
     if [[ "${location}" == *"${usbroot}"* ]]; then
         ficon=$usb_icon
     fi
-    lres=$(printf "[$ficon%s %s]\n" "$location" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "|" $2}')")
+    lres=$(printf "[$ficon%s:%s]\n" "$location" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "|" $2}')")
     echores="${echores} ${lres}"
     # echo $lres
 done

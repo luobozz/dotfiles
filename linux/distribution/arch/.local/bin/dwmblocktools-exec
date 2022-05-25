@@ -9,7 +9,7 @@ fi
 count=`ps -ef | grep "${cmd}" | grep -v "grep" |grep -v "dwmblocktools-exec" | wc -l`
 
 # ps -ef | grep "${cmd}"
-ps -ef | grep "${cmd}" | grep -v "grep" 
+# ps -ef | grep "${cmd}" | grep -v "grep" 
 if [[ $count == 0 ]];then
     # echo $cmd
     $cmd

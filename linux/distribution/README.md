@@ -1,6 +1,15 @@
 # 额外安装
 
 ## arch
+- install 基础
+  
+  ```
+  #xorg
+  解决 "X Error of failed request:  BadLength (poly request too large or internal Xlib length error)"
+  https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1#note_388317
+  yay -S libxft-bgra lib32-libxft-bgra
+  ```
+
 - install WM 
   
   `yay -S picom feb acpi dmenu`
