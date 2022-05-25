@@ -77,7 +77,7 @@
   #vlc
   yay -S vlc-git
   #wps
-  yay -S wps-office-mui-zh-cn wps-office-mime-cn wps-office-cn wps-office-fonts ttf-ms-fonts ttf-wps-fonts
+  yay -S wps-office-mui-zh-cn wps-office-mime-cn wps-office-cn wps-office-fonts ttf-wps-fonts
   ```
 
 
