@@ -14,6 +14,9 @@
   #U盘自动挂载
   yay -S udisks
   yay -S udevil
+  
+  #python3脚本需求
+  #pip install requests
   ```
 
 - install 输入法 
