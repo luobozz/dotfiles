@@ -1,0 +1,2 @@
+#!/bin/sh
+env LANGUAGE=zh_CN /usr/bin/vlc

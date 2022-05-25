@@ -56,20 +56,28 @@
 - install qq和微信 
     
     ```
-    #官方捡漏版本
+    #官方简陋版本
     yay -S linuxqq
     yay -S wechat-uos
+    #wine
+    yay -S deepin-wine-tim
+    https://github.com/vufa/deepin-wine-tim-arch FQA
     ```
-
-- install wechat 
-  
-  `yay -S wechat-uos`
 
 - install iea 
   
   ```
   yay -S vscode jetbrains-toolbox
   # dwm idea的bug [https://blog.csdn.net/u010563350/article/details/104948256](https://blog.csdn.net/u010563350/article/details/104948256)
+  ```
+
+- install 其他软件 
+  
+  ```
+  #vlc
+  yay -S vlc-git
+  #wps
+  yay -S wps-office-mui-zh-cn wps-office-mime-cn wps-office-cn wps-office-fonts ttf-ms-fonts ttf-wps-fonts
   ```
 
 

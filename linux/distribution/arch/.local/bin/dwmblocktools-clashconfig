@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-# print("te")
-import argparse
-import requests
-import json
+import argparse,requests,json
 
 def clashProxiesNow():
     req=requests.get("http://127.0.0.1:9090/proxies",timeout=1)
