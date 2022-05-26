@@ -18,7 +18,11 @@
 
 - install ranger
  ```
+ #图片预览
  pip install ueberzug
+ #视频预览
+ yay -S ffmpeg ffmpegthumbnailer
+ #pdf预览
  yay -S poppler
  ```
 
@@ -70,7 +74,7 @@
     #wine
     yay -S deepin-wine-tim
     https://github.com/vufa/deepin-wine-tim-arch FQA
-    yay -S deepin-wine-wechat
+    yay -S com.qq.weixin.deepin
     https://github.com/vufa/deepin-wine-wechat-arch FQA
     ```
 
