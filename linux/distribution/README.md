@@ -12,7 +12,15 @@
 
 - install WM 
   
-  `yay -S picom feb acpi dmenu`
+  ```
+  yay -S picom feb acpi dmenu
+  ```
+
+- install ranger
+ ```
+ pip install ueberzug
+ yay -S poppler
+ ```
 
 - install dwmblocks
   ```
@@ -74,11 +82,19 @@
 - install 其他软件 
   
   ```
+  #top
+  yay -S bpytop
   #vlc
   yay -S vlc-git
   #wps
-  yay -S wps-office-mui-zh-cn wps-office-mime-cn wps-office-cn wps-office-fonts ttf-wps-fonts
+  yay -S wps-office-mui-zh-cn wps-office-cn wttf-wps-fonts
+  # for pdf reader
+  sudo pacman -S zathura zathura-pdf-mupdf
   ```
 
+- install java环境
+  ```
+
+  ```
 
 

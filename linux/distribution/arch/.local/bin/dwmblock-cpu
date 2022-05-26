@@ -9,7 +9,7 @@ icon=""
 
 case $BLOCK_BUTTON in
     1) notify-send "CPU消耗" "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)\\n(100% per core)";;
-    3) dwmblocktools-exec 'st -e htop' ;;
+    3) dwmblocktools-exec 'st -e bpytop' ;;
     6) "code" "$0";;
 esac
 

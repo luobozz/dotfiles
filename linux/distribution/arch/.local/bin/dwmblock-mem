@@ -1,7 +1,7 @@
 #!/bin/bash
 case $BLOCK_BUTTON in
     1) notify-send "内存消耗" "$(ps axch -o cmd:15,%mem --sort=-%mem | head)" ;;
-    3) dwmblocktools-exec 'st -e htop' ;;
+    3) dwmblocktools-exec 'st -e bpytop' ;;
     6) "code" "$0";;
 esac
 
