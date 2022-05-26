@@ -88,6 +88,8 @@
 - install 其他软件 
   
   ```
+  #截图
+  yay -S flameshot
   #top
   yay -S bpytop
   #vlc
@@ -100,7 +102,10 @@
 
 - install java环境
   ```
-
+  wget https://raw.githubusercontent.com/luobozz/LBSH/main/package/mini_script/java%26maven_installer
+  chmod +x ./java&maven_installer
+  sudo ./java&maven_installer
+  
   ```
 
 
