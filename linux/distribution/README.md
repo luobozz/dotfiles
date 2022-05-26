@@ -70,6 +70,8 @@
     #wine
     yay -S deepin-wine-tim
     https://github.com/vufa/deepin-wine-tim-arch FQA
+    yay -S deepin-wine-wechat
+    https://github.com/vufa/deepin-wine-wechat-arch FQA
     ```
 
 - install iea 
