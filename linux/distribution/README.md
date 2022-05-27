@@ -102,6 +102,8 @@
   yay -S wps-office-mui-zh-cn wps-office-cn wttf-wps-fonts
   # for pdf reader
   sudo pacman -S zathura zathura-pdf-mupdf
+  # 百度云盘
+  yay -S baidunetdisk-electron
   ```
 
 - install java环境
