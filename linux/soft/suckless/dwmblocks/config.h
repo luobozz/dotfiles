@@ -10,7 +10,7 @@ static const Block blocks[] = {
 	{"",		"dwmblocktools-blockscmd 'dwmblock-network'",						1,					7},
 	{"",		"dwmblocktools-blockscmd 'dwmblock-network-proxy'",					1,					8},
 	{"",		"dwmblocktools-blockscmd 'dwmblock-fcitx'",							1,					9},
-	{"",		"dwmblocktools-blockscmd 'dwmblock-refresh'",						0,					10},
+	{"",		"dwmblocktools-blockscmd 'dwmblock-home'",						0,					10},
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.
