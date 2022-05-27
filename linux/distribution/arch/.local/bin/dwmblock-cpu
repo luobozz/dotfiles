@@ -1,5 +1,5 @@
 #!/bin/bash
-cache=~/tmp/cpubarscache
+cache=~/.cache/cpubarscache
 # 当次上次提取对比
 stats=$(awk '/cpu[0-9]+/ {printf "%d %d %d\n", substr($1,4), ($2 + $3 + $4 + $5), $5 }' /proc/stat)
 [ ! -f $cache ] && echo "$stats" >"$cache"
