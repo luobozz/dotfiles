@@ -106,9 +106,12 @@
 
 - install java环境
   ```
-  wget https://raw.githubusercontent.com/luobozz/LBSH/main/package/mini_script/java%26maven_installer
-  chmod +x ./java&maven_installer
-  sudo ./java&maven_installer
+  wget https://raw.githubusercontent.com/luobozz/LBSH/main/package/mini_script/java_installer
+  chmod +x ./java_installer
+  sudo ./java_installer
+  wget https://raw.githubusercontent.com/luobozz/LBSH/main/package/mini_script/maven_installer
+  chmod +x ./maven_installer
+  sudo ./maven_installer
   
   ```
 
