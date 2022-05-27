@@ -89,8 +89,7 @@
   # dwm idea的bug [https://blog.csdn.net/u010563350/article/details/104948256](https://blog.csdn.net/u010563350/article/details/104948256)
   ```
 
-- install 其他软件 
-  
+- install 其他软件   
   ```
   #截图
   yay -S flameshot
