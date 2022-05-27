@@ -45,7 +45,11 @@
   #fcitx4
   sudo pacman -S fcitx fcitx-im fcitx-sogoupinyin fcitx-configtool
   #fcitx5
-  sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons fcitx5-material-color
+  sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons 
+  #皮肤
+  sudo pacman -S fcitx5-material-color fcitx5-nord
+  #词库
+  sudo pacman -S fcitx5-pinyin-moegirl fcitx5-pinyin-zhwiki fcitx5-pinyin-sougou
   ```
 
 - install 蓝牙
