@@ -72,7 +72,7 @@ ZSH_THEME="essembeh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting cp zsh-autosuggestions zsh-nvm)
 
-[ ! -f "$HOME/.lbsh/.lbsh_profile" ] || ls $HOME/.lbsh/.lbsh_profile
+[ ! -f "$HOME/.lbsh/.lbsh_profile" ] || source $HOME/.lbsh/.lbsh_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -117,3 +117,8 @@ alias ra="ranger"
 alias nv="nvim"
 alias c="clear"
 alias nf="neofetch"
+alias lg="lazygit"
+export JAVA_HOME=/usr/local/java/jdk1.8.0_202
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
