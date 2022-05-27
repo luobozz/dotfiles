@@ -2,5 +2,7 @@
 map j scrollLeft
 map i scrollUp
 map k scrollDown
-map <c-i> scrollPageUp
-map <c-k> scrollPageDown
+map <a-i> scrollPageUp
+map <a-k> scrollPageDown
+map <a-j> previousTab
+map <a-l> nextTab
