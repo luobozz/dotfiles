@@ -1,0 +1,41 @@
+#!/bin/bash
+
+function sync_menu(){
+    item=("wallpaper" "dwm_script" "xrog_script")
+    for ((i = 0; i < ${#item[*]}; i++)); do
+        let index=i+1
+        echo "${index}) ${item[i]}"
+    done
+    echo
+    read -p "选一个要同步的内容(1-${#item[*]}): " -N 1 rc
+    expr $rc + 0 &>/dev/null && {
+        let index=rc-1
+        inputArg=${item[index]}
+        [[ ${item[@]/${inputArg}/} != ${item[@]} ]] && {
+            echo
+            out="$($inputArg)"
+            echo $out
+            } || {
+            echo "没有这个选项"
+        }
+        } ||{
+        echo "输入正确的数字"
+    }
+}
+
+
+function wallpaper(){
+    cp -r ~/pictures/wallpapers ~/code/luobo/dotfiles/linux/distribution/arch/pictures/
+    ls -l ~/code/luobo/dotfiles/linux/distribution/arch/pictures/
+}
+
+function dwm_script(){
+    cp ~/.local/bin/dwm* ~/code/luobo/dotfiles/linux/distribution/arch/.local/bin/
+    ls -l ~/code/luobo/dotfiles/linux/distribution/arch/.local/bin/dwm*
+}
+
+function xrog_script(){
+    echo xrog_script
+}
+
+sync_menu
