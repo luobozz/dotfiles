@@ -138,52 +138,53 @@ static const char *termcmd[]  = { TERMINAL, NULL };
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static Key keys[] = {
-	/* modifier                     key        function        argument */
-	// dmenu
-	{ MODKEY,						XK_p,  	   spawn,          {.v= dmenucmd} },
-	//快捷启动
-	{ MODKEY,             		    XK_F1,      spawn,          SHCMD("google-chrome-stable --allow-file-access-from-files") },
-	{ MODKEY,                    	XK_F2,      spawn,          {.v = termcmd} },
-	{ MODKEY,             		    XK_F4,      spawn,          SHCMD("code") },
-	// 关闭当前窗口
-	{ MODKEY,             			XK_c,      killclient,     {0} },
-	// 隐藏任务栏
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	// 开启一个浮动控制台
- 	{ MODKEY,		            	XK_grave,  togglescratch,  {.ui = 0} },
- 
-    // 任务栏 标签移动
- 	{ MODKEY,						XK_Left,	shiftview,	{.i = -1} },
- 	{ MODKEY,						XK_Right,	shiftview,	{.i = +1} },
-	{ MODKEY,			XK_Tab,		view,		{0} },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
-
-	//窗口移动
-	STACKKEYS(MODKEY,                          focus)
-	STACKKEYS(MODKEY|ShiftMask,                push)
-	{ MODKEY,                       XK_minus,      setmfact,     {.f = -0.05} },
-	{ MODKEY,                       XK_equal,      setmfact,     {.f = +0.05} },
-	//TODO 某些笔记本增强按键(修复equal按不下去目前不知道原因)
-	{ MODKEY,                       XK_KP_Subtract,      setmfact,     {.f = +0.05} },
-	{ MODKEY,                       XK_KP_Add,      setmfact,     {.f = -0.05} },
+	/* modifier                     key                  function            argument */
+	// dmenu         
+	{ MODKEY,						XK_p,  	             spawn,              {.v= dmenucmd} },
+	//快捷启动         
+	{ MODKEY|Mod1Mask,             	XK_1,               spawn,              SHCMD("google-chrome-stable --allow-file-access-from-files") },
+	{ MODKEY|Mod1Mask,              XK_2,               spawn,              {.v = termcmd} },
+	{ MODKEY|Mod1Mask,             	XK_3,               spawn,              SHCMD("code") },
+	// 关闭当前窗口         
+	{ MODKEY,             			XK_c,                killclient,         {0} },
+	// 隐藏任务栏         
+	{ MODKEY,                       XK_b,                togglebar,          {0} },
+	// 开启一个浮动控制台         
+ 	{ MODKEY,		            	XK_grave,            togglescratch,      {.ui = 0} },
+          
+    // 任务栏 标签移动         
+ 	{ MODKEY,						XK_Left,	         shiftview,	         {.i = -1} },
+ 	{ MODKEY,						XK_Right,	         shiftview,	         {.i = +1} },
+	{ MODKEY,						XK_Tab,		         view,		         {0} },
+	TAGKEYS(                        XK_1,                                    0)
+	TAGKEYS(                        XK_2,                                    1)
+	TAGKEYS(                        XK_3,                                    2)
+	TAGKEYS(                        XK_4,                                    3)
+	TAGKEYS(                        XK_5,                                    4)
+	TAGKEYS(                        XK_6,                                    5)
+	TAGKEYS(                        XK_7,                                    6)
+	TAGKEYS(                        XK_8,                                    7)
+	TAGKEYS(                        XK_9,                                    8)
+         
+	//窗口移动         
+	STACKKEYS(MODKEY,               focus)         
+	STACKKEYS(MODKEY|ShiftMask,     push)         
+	{ MODKEY,                       XK_minus,            setmfact,           {.f = -0.05} },
+	{ MODKEY,                       XK_equal,            setmfact,           {.f = +0.05} },
+	//TODO 某些笔记本增强按键(修复equal按不下去目前不知道原因)      
+	{ MODKEY,                       XK_KP_Subtract,      setmfact,           {.f = +0.05} },
+	{ MODKEY,                       XK_KP_Add,           setmfact,           {.f = -0.05} },
 	
 	//窗口操作
 	//全屏
-	{ MODKEY,			XK_F11,		togglefullscr,	{0} },
-	//切换当前窗口到主窗口
-	{ MODKEY,			XK_space,	zoom,		{0} },
-	// 窗口伴随
-	{ MODKEY,			XK_s,		togglesticky,	{0} },	
-	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("ps -ef | grep Xorg | awk '{print $2}' | xargs kill -9") },
-	{ MODKEY|ShiftMask,           XK_a,      spawn,          SHCMD("flameshot gui")},
+	{ MODKEY,			 			XK_F11,				 togglefullscr,	     {0} },
+	{ MODKEY,			 			XK_l,				 spawn,              SHCMD("slock") },
+	//切换当前窗口到主窗口        
+	{ MODKEY,						XK_space,			 zoom,		         {0} },
+	// 窗口伴随         		
+	{ MODKEY,						XK_s,				 togglesticky,	     {0} },	
+	{ MODKEY|ShiftMask,             XK_q,                spawn,              SHCMD("ps -ef | grep Xorg | awk '{print $2}' | xargs kill -9") },
+	{ MODKEY|ShiftMask,             XK_a,                spawn,              SHCMD("flameshot gui")},
 	// 布局
 	// 平铺模式
 	// { MODKEY,                       XK_space,  setlayout,      {0} },
