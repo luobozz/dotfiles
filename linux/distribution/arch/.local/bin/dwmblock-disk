@@ -10,7 +10,7 @@ case $BLOCK_BUTTON in
     1) notify-send "硬盘空间情况" "$(df -h --output=target,used,size)" ;;
     6) "code" "$0";;
 esac
-# u盘
+# u盘 TODO 检验真实的U盘而非单纯挂载目录
 for location in $usbroot/*; do
     if [ -e "${location}" ]; then
         locations[${#locations[*]}]=$location
