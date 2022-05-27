@@ -2,5 +2,5 @@
 while true
 do
   feh --recursive --randomize --bg-fill ~/pictures/wallpapers/
-  sleep 2m
+  sleep 5m
 done

@@ -1,7 +1,7 @@
 #!/bin/bash
 case $BLOCK_BUTTON in
     # 1) "pkill" "-HUP" "dwm";;
-    3) "feh --recursive --randomize --bg-fill ~/pictures/wallpapers/";;
+    3) "feh" "--recursive" "--randomize" "--bg-fill" "$HOME/pictures/wallpapers/";;
     6) "code" "$0";;
 esac
 
