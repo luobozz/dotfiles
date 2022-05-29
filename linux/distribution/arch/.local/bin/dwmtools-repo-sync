@@ -25,7 +25,8 @@ function sync_menu(){
 
 
 function wallpaper(){
-    cp -r ~/pictures/wallpapers ~/code/luobo/dotfiles/linux/distribution/arch/pictures/
+    rm -rf ~/code/luobo/dotfiles/linux/distribution/arch/pictures/wallpapers
+    cp -r ~/pictures/wallpapers ~/code/luobo/dotfiles/linux/distribution/arch/pictures/wallpapers
     ls -l ~/code/luobo/dotfiles/linux/distribution/arch/pictures/
 }
 
