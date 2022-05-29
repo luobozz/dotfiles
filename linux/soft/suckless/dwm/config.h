@@ -178,7 +178,7 @@ static Key keys[] = {
 	//窗口操作
 	//全屏
 	{ MODKEY,			 			XK_F11,				 togglefullscr,	     {0} },
-	{ MODKEY,			 			XK_l,				 spawn,              SHCMD("slock") },
+	{ MODKEY,			 			XK_m,				 spawn,              SHCMD("slock") },
 	//切换当前窗口到主窗口        
 	{ MODKEY,						XK_space,			 zoom,		         {0} },
 	// 窗口伴随         		
