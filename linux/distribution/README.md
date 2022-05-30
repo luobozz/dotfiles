@@ -35,6 +35,8 @@
   #U盘自动挂载
   yay -S udisks
   yay -S udevil
+  #亮度
+  yay -S light-git
   
   #python3脚本需求
   #pip install requests
@@ -102,6 +104,8 @@
   # for pdf reader
   sudo pacman -S zathura zathura-pdf-mupdf
   # 百度云盘
+  yay -S electron9-bin
+  yay -S baidunetdisk-electron
   ```
 
 - install java环境

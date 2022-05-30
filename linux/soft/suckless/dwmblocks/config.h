@@ -7,10 +7,11 @@ static const Block blocks[] = {
 	{"",		"dwmblocktools-blockscmd 'dwmblock-disk'",							5,					4},
 	{"",		"dwmblocktools-blockscmd 'dwmblock-date'",							1,					5},
 	{"",		"dwmblocktools-blockscmd 'dwmblock-vol'",							1,					6},
-	{"",		"dwmblocktools-blockscmd 'dwmblock-network'",						1,					7},
-	{"",		"dwmblocktools-blockscmd 'dwmblock-network-proxy'",					1,					8},
-	{"",		"dwmblocktools-blockscmd 'dwmblock-fcitx'",							1,					9},
-	{"",		"dwmblocktools-blockscmd 'dwmblock-home'",						0,					10},
+	{"",		"dwmblocktools-blockscmd 'dwmblock-battery'",						1,					7},
+	{"",		"dwmblocktools-blockscmd 'dwmblock-network'",						1,					8},
+	{"",		"dwmblocktools-blockscmd 'dwmblock-network-proxy'",					1,					9},
+	{"",		"dwmblocktools-blockscmd 'dwmblock-fcitx'",							1,					10},
+	{"",		"dwmblocktools-blockscmd 'dwmblock-home'",							0,					11},
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.
