@@ -84,11 +84,12 @@
     https://github.com/vufa/deepin-wine-wechat-arch FQA
     ```
 
-- install iea 
+- install 开发软件
   
   ```
   yay -S vscode jetbrains-toolbox
   # dwm idea的bug [https://blog.csdn.net/u010563350/article/details/104948256](https://blog.csdn.net/u010563350/article/details/104948256)
+  
   ```
 
 - install 其他软件   
