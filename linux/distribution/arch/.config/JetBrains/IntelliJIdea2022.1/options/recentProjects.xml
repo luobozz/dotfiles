@@ -15,33 +15,86 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/code/organization/cpms/camel-admin-web">
-          <value>
-            <RecentProjectMetaInfo frameTitle="camel-admin-web – station.vue" projectWorkspaceId="29KUvdfNMWipBrbBDSl6VDcHsBZ">
-              <option name="activationTimestamp" value="1652933361873" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="IU-221.5591.52" />
-              <option name="buildTimestamp" value="1652208960033" />
-              <frame x="10" y="29" width="1894" height="1035" />
-              <option name="productionCode" value="IU" />
-              <option name="projectOpenTimestamp" value="1652861643973" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/code/luobo/notes">
           <value>
-            <RecentProjectMetaInfo frameTitle="notes – README.md" opened="true" projectWorkspaceId="29MqaW1enQcOmswBXnlgR0fmSQc">
-              <option name="activationTimestamp" value="1652933392088" />
+            <RecentProjectMetaInfo frameTitle="notes – README.md" projectWorkspaceId="29MqaW1enQcOmswBXnlgR0fmSQc">
+              <option name="activationTimestamp" value="1653533222131" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="IU-221.5591.52" />
               <option name="buildTimestamp" value="1652208968342" />
-              <frame x="10" y="29" width="1894" height="1035" />
+              <frame x="10" y="30" width="1894" height="1034" />
               <option name="productionCode" value="IU" />
               <option name="projectOpenTimestamp" value="1652933365286" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/code/organization/shtf/shtf-server">
+          <value>
+            <RecentProjectMetaInfo frameTitle="shtf-server – README.md" projectWorkspaceId="29hMbhiU8eXfhIcf1whX5a5Fn0k">
+              <option name="activationTimestamp" value="1653638306553" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208967976" />
+              <frame x="4" y="24" width="1906" height="1046" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1653636624397" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/organization/shtf/shtf-client">
+          <value>
+            <RecentProjectMetaInfo frameTitle="shtf-client – http.config.js" projectWorkspaceId="29jOak3SPIuMfCLUjpuSreTAtoq">
+              <option name="activationTimestamp" value="1653962892253" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208980029" />
+              <frame x="4" y="24" width="1906" height="1046" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1653962881596" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/organization/cpms/camel-admin-web">
+          <value>
+            <RecentProjectMetaInfo frameTitle="camel-admin-web – cpmsRuntime.vue" opened="true" projectWorkspaceId="29KUvdfNMWipBrbBDSl6VDcHsBZ">
+              <option name="activationTimestamp" value="1653970501228" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208980029" />
+              <frame x="4" y="24" width="1906" height="1046" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1653962949295" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/organization/shtf/zgbank-face-recognition/zfr-client">
+          <value>
+            <RecentProjectMetaInfo frameTitle="zfr-client – zfr/index.js" opened="true" projectWorkspaceId="29sHqvV0AvJm0J2QLn1JQdJ5QHh">
+              <option name="activationTimestamp" value="1653977602590" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208980029" />
+              <frame x="4" y="24" width="1906" height="1046" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1653962949295" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/organization/shtf/zgbank-face-recognition/zfr-service">
+          <value>
+            <RecentProjectMetaInfo frameTitle="zfr-service – pom.xml (zfr-service)" opened="true" projectWorkspaceId="29uRdli75Uv8kJnAvuLTP45SOGA">
+              <option name="activationTimestamp" value="1653970501019" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-221.5591.52" />
+              <option name="buildTimestamp" value="1652208980029" />
+              <frame x="4" y="24" width="1906" height="1046" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1653962949295" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/code/organization/shtf/zgbank-face-recognition" />
   </component>
 </application>

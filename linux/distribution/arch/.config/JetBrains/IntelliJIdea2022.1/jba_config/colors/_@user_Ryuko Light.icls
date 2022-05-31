@@ -1,22 +1,11 @@
 <scheme name="_@user_Ryuko Light" version="142" parent_scheme="Default">
-  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="created">2021-12-22T11:51:28</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2021.3.0.0</property>
-    <property name="modified">2022-05-16T09:53:46</property>
+    <property name="modified">2022-05-26T10:44:36</property>
     <property name="originalScheme">Ryuko Light</property>
   </metaInfo>
-  <option name="LINE_SPACING" value="1.1" />
-  <font>
-    <option name="EDITOR_FONT_NAME" value="Victor Mono" />
-    <option name="EDITOR_FONT_SIZE" value="12" />
-  </font>
-  <font>
-    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
-    <option name="EDITOR_FONT_SIZE" value="12" />
-  </font>
-  <option name="EDITOR_LIGATURES" value="true" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="d0fdc9aa" />
     <option name="ANNOTATIONS_COLOR" value="ee5c09" />
@@ -460,8 +449,8 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="" />
-    <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="" />
+    <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING" />
+    <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
     <option name="CodeWithMe.USER_1_MARKER">
       <value>
         <option name="FOREGROUND" value="ffffff" />
@@ -877,6 +866,9 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="HTML_CODE">
+      <value />
+    </option>
     <option name="HTML_TAG">
       <value>
         <option name="FOREGROUND" value="4d4d4a" />
@@ -1061,8 +1053,8 @@
         <option name="BACKGROUND" value="ffffff" />
       </value>
     </option>
-    <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="" />
-    <option name="Instance property reference ID" baseAttributes="" />
+    <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD" />
+    <option name="Instance property reference ID" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
     <option name="JAVA.THIS_SUPER">
       <value>
         <option name="FOREGROUND" value="4c94d6" />
@@ -1148,6 +1140,9 @@
       </value>
     </option>
     <option name="KOTLIN_IMPLICIT_EXHAUSTIVE_WHEN">
+      <value />
+    </option>
+    <option name="KOTLIN_LABEL">
       <value />
     </option>
     <option name="KOTLIN_MUTABLE_VARIABLE">
@@ -2077,9 +2072,8 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="f6f6f6" />
+        <option name="BACKGROUND" value="99ccbb" />
         <option name="FONT_TYPE" value="1" />
-        <option name="EFFECT_COLOR" value="169ef2" />
       </value>
     </option>
     <option name="NG.EXPANSION_FORM">
@@ -2719,7 +2713,7 @@
     <option name="TWIG_BACKGROUND">
       <value />
     </option>
-    <option name="TYPE_PARAMETER_NAME_ATTRIBUTES" baseAttributes="" />
+    <option name="TYPE_PARAMETER_NAME_ATTRIBUTES" baseAttributes="DEFAULT_PARAMETER" />
     <option name="TYPO">
       <value>
         <option name="EFFECT_COLOR" value="9ebc99" />
@@ -2731,7 +2725,7 @@
         <option name="FOREGROUND" value="cd4848" />
       </value>
     </option>
-    <option name="Unresolved reference access" baseAttributes="" />
+    <option name="Unresolved reference access" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="Valid string escape">
       <value>
         <option name="FOREGROUND" value="cc7832" />
@@ -2776,7 +2770,7 @@
         <option name="FOREGROUND" value="2811b9" />
       </value>
     </option>
-    <option name="XPATH.FUNCTION" baseAttributes="" />
+    <option name="XPATH.FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL" />
     <option name="XPATH.KEYWORD">
       <value>
         <option name="FOREGROUND" value="b03f0f" />

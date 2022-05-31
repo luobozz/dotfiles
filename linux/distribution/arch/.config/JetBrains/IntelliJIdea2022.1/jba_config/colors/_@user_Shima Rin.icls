@@ -1,11 +1,15 @@
 <scheme name="_@user_Shima Rin" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="created">2021-12-21T23:48:18</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2021.3.0.0</property>
-    <property name="modified">2022-05-16T09:53:46</property>
+    <property name="modified">2022-05-26T14:30:04</property>
     <property name="originalScheme">Shima Rin</property>
   </metaInfo>
+  <option name="CONSOLE_FONT_NAME" value="FiraMono NF" />
+  <option name="CONSOLE_FONT_SIZE" value="16" />
+  <option name="CONSOLE_LINE_SPACING" value="1.0" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="223b289a" />
     <option name="ANNOTATIONS_COLOR" value="8bd9ff" />
@@ -453,9 +457,9 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
-    <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="" />
-    <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="" />
-    <option name="Class" baseAttributes="" />
+    <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING" />
+    <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
+    <option name="Class" baseAttributes="CLASS_NAME_ATTRIBUTES" />
     <option name="CodeWithMe.USER_1_MARKER">
       <value>
         <option name="FOREGROUND" value="2b303b" />
@@ -863,18 +867,18 @@
         <option name="FOREGROUND" value="89acf6" />
       </value>
     </option>
-    <option name="HAML_COMMENT" baseAttributes="" />
-    <option name="HAML_FILTER" baseAttributes="" />
-    <option name="HAML_FILTER_CONTENT" baseAttributes="" />
+    <option name="HAML_COMMENT" baseAttributes="DEFAULT_DOC_COMMENT" />
+    <option name="HAML_FILTER" baseAttributes="DEFAULT_LABEL" />
+    <option name="HAML_FILTER_CONTENT" baseAttributes="DEFAULT_TEMPLATE_LANGUAGE_COLOR" />
     <option name="HAML_ID">
       <value>
         <option name="FOREGROUND" value="89acf6" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="HAML_RUBY_CODE" baseAttributes="" />
-    <option name="HAML_TAG" baseAttributes="" />
-    <option name="HAML_TEXT" baseAttributes="" />
+    <option name="HAML_RUBY_CODE" baseAttributes="INJECTED_LANGUAGE_FRAGMENT" />
+    <option name="HAML_TAG" baseAttributes="TEXT" />
+    <option name="HAML_TEXT" baseAttributes="TEXT" />
     <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE" />
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING" />
     <option name="HTML_CODE">
@@ -1126,7 +1130,7 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="JSP_DIRECTIVE_NAME" baseAttributes="" />
+    <option name="JSP_DIRECTIVE_NAME" baseAttributes="DEFAULT_KEYWORD" />
     <option name="JUPYTER_SELECTED_CELL">
       <value>
         <option name="BACKGROUND" value="323743" />
@@ -2167,15 +2171,15 @@
         <option name="FOREGROUND" value="458383" />
       </value>
     </option>
-    <option name="PROPERTIES.INVALID_STRING_ESCAPE" baseAttributes="" />
+    <option name="PROPERTIES.INVALID_STRING_ESCAPE" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
     <option name="PROPERTIES.KEY">
       <value>
         <option name="FOREGROUND" value="61ead9" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
-    <option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="" />
-    <option name="PROPERTIES.VALID_STRING_ESCAPE" baseAttributes="" />
+    <option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="DEFAULT_OPERATION_SIGN" />
+    <option name="PROPERTIES.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
     <option name="PY.BUILTIN_NAME">
       <value>
         <option name="FOREGROUND" value="61ead9" />
@@ -2642,7 +2646,7 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
-    <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="" />
+    <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_METHOD" />
     <option name="SUGGESTION">
       <value>
         <option name="EFFECT_COLOR" value="687380" />
@@ -2670,7 +2674,7 @@
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
-    <option name="Static method access" baseAttributes="" />
+    <option name="Static method access" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
     <option name="TAG_ATTR_KEY">
       <value>
         <option name="FOREGROUND" value="ec9cb2" />
@@ -2729,13 +2733,13 @@
     <option name="TWIG_BACKGROUND">
       <value />
     </option>
-    <option name="TYPE_PARAMETER_NAME_ATTRIBUTES" baseAttributes="" />
+    <option name="TYPE_PARAMETER_NAME_ATTRIBUTES" baseAttributes="DEFAULT_PARAMETER" />
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="cd4848" />
       </value>
     </option>
-    <option name="Unresolved reference access" baseAttributes="" />
+    <option name="Unresolved reference access" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="VELOCITY_SCRIPTING_BACKGROUND">
       <value>
         <option name="BACKGROUND" value="23271a" />
@@ -2788,7 +2792,7 @@
         <option name="FOREGROUND" value="6c7c96" />
       </value>
     </option>
-    <option name="XPATH.FUNCTION" baseAttributes="" />
+    <option name="XPATH.FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL" />
     <option name="XPATH.KEYWORD">
       <value>
         <option name="FOREGROUND" value="ea73d6" />

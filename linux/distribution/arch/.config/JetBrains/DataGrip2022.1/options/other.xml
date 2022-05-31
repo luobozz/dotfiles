@@ -1,0 +1,57 @@
+<application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="29NH0RmIuFa4EqIVaqryIMQBZEG">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="FiraMono Nerd Font" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "DbRenameDialog.previewExpanded": "true",
+    "InstalledPluginsSearchHistory": "chinese\nicon",
+    "KEYMAP": "execute",
+    "MarketplacePluginsSearchHistory": "chi\nch\nc\nchinese\n中文",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.se.text.search": "true",
+    "SettingsSearchHistory": "password\ngit@codeup.aliyun.com:6221b716f13646b7effe756a/rd/rd-spec.git",
+    "SqlStructureView.filterD.file.structure.state": "true",
+    "appcds.runOnSecondStart": "DB-221.5591.57-738076cb850fa9102baec1fe65b77c75b9b02ab4c10020752770015a4f830dfd",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "bundled.plugins.list.saved.version": "DB-221.5591.57",
+    "com.intellij.database.actions.DbDeleteProvider$2.proportion": "0.5",
+    "com.intellij.database.actions.ddl.CreateObjectGroup$CreateObject$1.proportion": "0.5",
+    "com.intellij.database.actions.ddl.ModifyObjectAction$1.proportion": "0.5",
+    "db.last.update.timestamp": "1652946530174",
+    "file.gist.reindex.count": "99",
+    "fileTypeChangedCounter": "2",
+    "got.it.tooltip.database.schema.control.got.it": "1",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "DB-221.5591.57",
+    "ide.memory.adjusted": "true",
+    "ide.updates.whats.new.shown.for": "221",
+    "input.method.disabler.muted": "true",
+    "io.unthrottled.doki.background": "file:///home/el/.config/JetBrains/DataGrip2022.1/dokiThemeAssets/backgrounds/ryuko_light.png,100,SCALE,MIDDLE_RIGHT",
+    "last_opened_file_path": "/home/el/.cache/DataGripProjects/cpms",
+    "registry.to.advanced.settings.migration.build": "DB-221.5591.57"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/el/.cache/DataGripProjects/cpms"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

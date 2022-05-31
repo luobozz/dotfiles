@@ -1,0 +1,10 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/.cache/DataGripProjects/cpms" value="true" />
+        <entry key="$USER_HOME$/DataGripProjects/cpms" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

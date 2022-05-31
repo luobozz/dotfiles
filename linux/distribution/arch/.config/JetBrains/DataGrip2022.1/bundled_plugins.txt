@@ -1,0 +1,14 @@
+com.intellij|null
+org.jetbrains.plugins.textmate|Other Tools
+org.intellij.intelliLang|Other Tools
+com.intellij.plugins.warmneon.colorscheme|UI
+com.intellij.plugins.vibrantink.colorscheme|UI
+com.intellij.plugins.datagrip.solarized.colorscheme|UI
+com.intellij.platform.images|null
+com.intellij.diagram|Other Tools
+com.intellij.database|Database
+com.intellij.database.ide|null
+bundled-datagrip-help|null
+Remote Development Server|null
+Git4Idea|Version Controls
+com.intellij.searcheverywhere.ml|null

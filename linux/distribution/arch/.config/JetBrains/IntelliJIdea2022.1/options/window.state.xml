@@ -1,22 +1,41 @@
 <application>
   <component name="DimensionService">
-    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1848" height="313" />
-    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1848" height="313" />
-    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1848" height="313" />
-    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1848" height="313" />
+    <location key="find.popup.0.0.1920.1080" x="596" y="138" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.2.left.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.2.center.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.2.right.0.0.1920.1080" width="1856" height="390" />
+    <size key="GridCell.Tab.2.bottom.0.0.1920.1080" width="1856" height="390" />
+    <size key="find.popup.0.0.1920.1080" width="721" height="798" />
   </component>
   <component name="WindowManager">
-    <frame x="10" y="29" width="1894" height="1035" />
+    <frame x="4" y="24" width="1906" height="1046" />
   </component>
   <component name="WindowStateApplicationService">
-    <state x="743" y="226" key="FileChooserDialogImpl" timestamp="1652860209266">
+    <state x="743" y="226" width="424" height="454" key="FileChooserDialogImpl" timestamp="1653961018948">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="226" key="FileChooserDialogImpl/0.0.1920.1080" timestamp="1652860209266" />
-    <state x="1382" y="920" width="300" height="128" key="ProcessPopupWindow" timestamp="1652861862044">
+    <state x="743" y="226" key="FileChooserDialogImpl/0.0.1920.1080" timestamp="1653560936793" />
+    <state x="743" y="226" width="424" height="454" key="FileChooserDialogImpl/0.0.1920.1080/0.0.1920.1080" timestamp="1653961018948" />
+    <state x="820" y="920" width="862" height="128" key="ProcessPopupWindow" timestamp="1653636848145">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1382" y="920" width="300" height="128" key="ProcessPopupWindow/0.0.1920.1080" timestamp="1652861862044" />
+    <state x="820" y="920" width="862" height="128" key="ProcessPopupWindow/0.0.1920.1080" timestamp="1653636848145" />
+    <state width="640" height="108" key="ShowUsagesActions.dimensionServiceKey" timestamp="1653964554012">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="640" height="108" key="ShowUsagesActions.dimensionServiceKey/0.0.1920.1080/0.0.1920.1080" timestamp="1653964554012" />
+    <state x="1483" y="547" width="852" height="1046" key="WELCOME_SCREEN" timestamp="1653961019026">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1483" y="547" width="852" height="1046" key="WELCOME_SCREEN/0.0.1920.1080/0.0.1920.1080" timestamp="1653961019026" />
     <state x="560" y="168" key="new project wizard" timestamp="1652860176521">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

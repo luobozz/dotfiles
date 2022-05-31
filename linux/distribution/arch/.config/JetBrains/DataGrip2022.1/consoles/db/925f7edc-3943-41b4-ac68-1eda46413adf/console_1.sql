@@ -1,0 +1,1 @@
+select * from sys_role a left join sys_user_role b on a.id=b.role_id where a.id=1

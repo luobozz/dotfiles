@@ -17,6 +17,46 @@
             <ProjectPluginTracker />
           </value>
         </entry>
+        <entry key="29hMbhiU8eXfhIcf1whX5a5Fn0k">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29jOak3SPIuMfCLUjpuSreTAtoq">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29rrsiMy2FFFNUjKggxAgpy3iot">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29rsWmErublyeRGqFPy8NT6vmBS">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29sHqvV0AvJm0J2QLn1JQdJ5QHh">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29sHtqiZaud8H9Tl98658FQUaEq">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="29uRdli75Uv8kJnAvuLTP45SOGA">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="Default (Template) Project">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
       </map>
     </trackers>
   </component>
@@ -28,19 +68,34 @@
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
     "CWM_LOGGING_VERSION": "1",
+    "ColorChooser.RecentColors": "45-70-164-51,,,255-255-255-127",
+    "InstalledPluginsSearchHistory": "sni",
+    "Markdown Split EditorLayout": "Editor only",
+    "MemberChooser.copyJavadoc": "false",
+    "MemberChooser.showClasses": "true",
     "PluginConfigurable.selectionTab": "1",
     "RunOnceActivity.se.text.search": "true",
-    "SettingsSearchHistory": "terminal",
-    "appcds.runOnSecondStart": "IU-221.5591.52-76a568997c9c4f9a0791a4dee4ab34624bed958241334cb912a763580e8c792f",
+    "SettingsSearchHistory": "insp\nsni\nmaven\npassword\nterminal",
+    "appcds.runOnSecondStart": "IU-221.5591.52-6bfe41235b971516bcc3d9faee4cab39fcea8eb4536fe039e120e63ea03a431d",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.run.selection.state": "com.intellij.build.BuildTreeConsoleView",
     "bundled.plugins.list.saved.version": "IU-221.5591.52",
     "cn.yiiguxing.plugin.translate.version": "3.3.2",
     "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
     "com.intellij.ide.wizard.NewProjectWizardLanguageStep.selectedStep": "Java",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
+    "create.project.preferred.importer": "Existing sources",
+    "db.last.update.timestamp": "1653882960563",
     "defaultJdkConfigured": "true",
+    "defaultpackageserviceconfig.fulltext": "https://package-search.services.jetbrains.com/api/search/idea/fulltext",
+    "defaultpackageserviceconfig.suggest": "https://package-search.services.jetbrains.com/api/search/idea/suggest",
+    "defaultpackageserviceconfig.updated.ts": "1653561087944",
     "eclipse.projects.detected": "",
-    "file.gist.reindex.count": "18",
+    "file.gist.reindex.count": "689",
     "fileTypeChangedCounter": "4",
     "got.it.tooltip.cwm.invitation.notification": "1",
+    "got.it.tooltip.reader.mode.got.it": "1",
     "got.it.tooltip.terminal.smart_command_execution": "1",
     "gotit.previous.run": "IU-221.5591.52",
     "ide.memory.adjusted": "true",
@@ -48,7 +103,9 @@
     "input.method.disabler.muted": "true",
     "installed.kotlin.plugin.version": "221-1.6.21-release-337-IJ5591.52",
     "io.unthrottled.doki.background": "file:///home/el/.config/JetBrains/IntelliJIdea2022.1/dokiThemeAssets/backgrounds/shima_rin_dark.png,100,SCALE,MIDDLE_RIGHT",
-    "last_opened_file_path": "/home/el/settings.zip",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last.imported.location": "/home/el/code/organization/shtf/zgbank-face-recognition",
+    "last_opened_file_path": "/home/el/code/organization/shtf/zgbank-face-recognition/zfr-service",
     "project.wizard.group": "newWizard.com.intellij.ide.wizard.NewProjectBuilder",
     "registry.to.advanced.settings.migration.build": "IU-221.5591.52",
     "tasks.pass.word.conversion.enforced": "true",
@@ -56,9 +113,21 @@
   },
   "keyToStringList": {
     "file.chooser.recent.files": [
+      "/home/el/code/organization/cpms/camel-admin-web",
+      "/home/el/code/organization/shtf/zgbank-face-recognition/zfr-service",
+      "/home/el/code/organization/shtf/zgbank-face-recognition/zfr-client",
+      "/home/el/code/organization/shtf/zgbank-face-recognition/client",
+      "/home/el/code/organization/shtf/zgbank-face-recognition/service",
+      "/home/el/code/organization/shtf/zgbank-face-recognition",
+      "/home/el/code/organization/shtf/zgbank-face-recognition/TPComponent",
+      "/home/el/.config/maven/settings.xml",
+      "/home/el/code/organization/shtf/zigong",
+      "/home/el/.config/maven/settings-cpms.xml",
+      "/home/el/code/organization/shtf/shtf-client",
+      "/usr/local/java/jdk1.8.0_202",
+      "/home/el/code/organization/shtf/shtf-server",
       "/home/el/code/luobo/notes",
       "/home/el/settings.zip",
-      "/home/el/code/organization/cpms/camel-admin-web",
       "/home/el/code/luobo/dotfiles-bk"
     ],
     "fileTypeDetectors": [
@@ -77,8 +146,16 @@
 }]]></component>
   <component name="TerminalCommandHistoryManager">
     <command-history-files>
-      <command-history-file filename="camel-admin-web-history2" project-path="$USER_HOME$/code/organization/cpms/camel-admin-web" last-access-time="1652933310274" />
+      <command-history-file filename="camel-admin-web-history1" project-path="$USER_HOME$/code/organization/cpms/camel-admin-web" last-access-time="1653961185785" />
+      <command-history-file filename="zfr-service-history" project-path="$USER_HOME$/code/organization/shtf/zgbank-face-recognition/zfr-service" last-access-time="1653964328230" />
+      <command-history-file filename="shtf-server-history" project-path="$USER_HOME$/code/organization/shtf/shtf-server" last-access-time="1653636625668" />
+      <command-history-file filename="shtf-client-history" project-path="$USER_HOME$/code/organization/shtf/shtf-client" last-access-time="1653962848357" />
+      <command-history-file filename="zigong-history" project-path="$USER_HOME$/code/organization/shtf/zigong" last-access-time="1653882296856" />
+      <command-history-file filename="camel-admin-web-history" project-path="$USER_HOME$/code/organization/cpms/camel-admin-web" last-access-time="1653961185783" />
+      <command-history-file filename="client-history" project-path="$USER_HOME$/code/organization/shtf/zgbank-face-recognition/client" last-access-time="1653895474547" />
+      <command-history-file filename="zfr-client-history" project-path="$USER_HOME$/code/organization/shtf/zgbank-face-recognition/zfr-client" last-access-time="1653962916834" />
       <command-history-file filename="dotfiles-bk-history" project-path="$USER_HOME$/code/luobo/dotfiles-bk" last-access-time="1652861261336" />
+      <command-history-file filename="shtf-client-history1" project-path="$USER_HOME$/code/organization/shtf/shtf-client" last-access-time="1653962848359" />
     </command-history-files>
   </component>
 </application>

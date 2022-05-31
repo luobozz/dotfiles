@@ -1,0 +1,9 @@
+<application>
+  <component name="AtomFileIconsConfig">
+    <option name="monochromeColor" value="546e7a" />
+    <option name="accentColor" value="6688ad" />
+    <option name="themedColor" value="b0b0b0" />
+    <option name="hasBigIcons" value="true" />
+    <option name="customIconSize" value="22" />
+  </component>
+</application>

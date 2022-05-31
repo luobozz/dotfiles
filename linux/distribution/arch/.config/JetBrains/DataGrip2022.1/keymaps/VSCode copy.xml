@@ -1,0 +1,7 @@
+<keymap version="1" name="VSCode copy" parent="VSCode">
+  <action id="Console.Jdbc.Execute">
+    <keyboard-shortcut first-keystroke="ctrl r" />
+  </action>
+  <action id="RecentFiles" />
+  <action id="UsageFiltering.ReadAccess" />
+</keymap>

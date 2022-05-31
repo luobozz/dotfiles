@@ -1,0 +1,172 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="shtf-client" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/config/http.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="JavaScript">
+      <summary usageCount="3" lastUsed="1653962848277" />
+    </fileType>
+    <fileType name="Markdown">
+      <summary usageCount="3" lastUsed="1653638307405" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/src/config/http.config.js" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shtf-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shtf-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shtf-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shtf-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shtf-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shtf-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$" commandHistoryFileName="shtf-client-history" />
+      <TerminalTabState tabName="Local (2)" currentWorkingDirectory="$PROJECT_DIR$" commandHistoryFileName="shtf-client-history1" />
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5927000" />
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layout>
+      <window_info id="Bookmarks" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.10019176" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" show_stripe_button="false" weight="0.33030593" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Problems View" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33030593" />
+      <window_info anchor="bottom" id="Endpoints" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Services" order="9" />
+      <window_info anchor="bottom" id="Profiler" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="RestfulTool" order="1" />
+      <window_info anchor="right" id="Notifications" order="2" weight="0.25" />
+    </layout>
+    <recentWindows>
+      <value>Terminal</value>
+      <value>Project</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="308" height="280" key="Git.Branch.Popup" timestamp="1653639496339">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="308" height="280" key="Git.Branch.Popup/0.0.1920.1080@0.0.1920.1080" timestamp="1653639496339" />
+    <state width="1856" height="317" key="GridCell.Tab.0.bottom" timestamp="1653636623682">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1856" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1653636623682" />
+    <state width="1856" height="317" key="GridCell.Tab.0.center" timestamp="1653636623682">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1856" height="317" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1653636623682" />
+    <state width="1856" height="317" key="GridCell.Tab.0.left" timestamp="1653636623682">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1856" height="317" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1653636623682" />
+    <state width="1856" height="317" key="GridCell.Tab.0.right" timestamp="1653636623682">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1856" height="317" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1653636623682" />
+    <state x="189" y="115" key="MergeDialog" timestamp="1653639470815">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="189" y="115" key="MergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1653639470815" />
+    <state x="488" y="197" key="SettingsEditor" timestamp="1653796291714">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="488" y="197" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1653796291713" />
+    <state x="641" y="234" key="git4idea.branch.GitSmartOperationDialog" timestamp="1653639463558">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="641" y="234" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1653639463558" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/http.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

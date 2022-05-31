@@ -1,0 +1,1 @@
+delete from sys_account_role where sys_account_role.acc_uuid not in('656d8ceb3eab44789509f2e50e8b0acd')

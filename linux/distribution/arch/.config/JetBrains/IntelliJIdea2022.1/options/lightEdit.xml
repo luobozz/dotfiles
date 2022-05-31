@@ -1,0 +1,9 @@
+<application>
+  <component name="LightEdit">
+    <option name="sessionFiles">
+      <list>
+        <option value="file:///-h" />
+      </list>
+    </option>
+  </component>
+</application>

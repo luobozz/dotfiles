@@ -1,0 +1,7 @@
+<application>
+  <component name="FindSettings">
+    <mask>*.cql</mask>
+    <mask>*.ddl</mask>
+    <mask>*.sql</mask>
+  </component>
+</application>

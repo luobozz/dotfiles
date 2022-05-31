@@ -25,7 +25,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
@@ -35,8 +35,13 @@
   </component>
   <component name="FileTypeUsageLocalSummary">
     <fileType name="Markdown">
-      <summary usageCount="1" lastUsed="1652933366388" />
+      <summary usageCount="4" lastUsed="1653533205867" />
     </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/README.md" />
+    </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -56,6 +61,11 @@
               <item name="notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="notes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+              <item name="Q&amp;A" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -64,28 +74,28 @@
     </panes>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27000" />
+    <option name="totallyTimeSpent" value="623000" />
   </component>
   <component name="ToolWindowManager">
     <layout>
       <window_info id="Bookmarks" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Learn" order="0" />
-      <window_info id="Structure" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2505924" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Problems View" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Endpoints" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Services" order="4" />
-      <window_info anchor="bottom" id="Profiler" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Problems View" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Endpoints" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Services" order="9" />
+      <window_info anchor="bottom" id="Profiler" order="10" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="RestfulTool" order="0" />
-      <window_info anchor="right" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="RestfulTool" order="1" />
+      <window_info anchor="right" id="Notifications" order="2" weight="0.25" />
     </layout>
     <recentWindows>
       <value>Project</value>
@@ -96,12 +106,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="260" height="208" key="Git.Branch.Popup/0.0.1920.1080@0.0.1920.1080" timestamp="1652933371039" />
+    <state x="973" y="182" key="SettingsEditor" timestamp="1653533076033">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="973" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1653533076033" />
     <state x="718" y="477" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1652933372634">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="477" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1652933372634" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/d_task.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]" />
     </entry>
