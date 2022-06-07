@@ -90,6 +90,10 @@
   yay -S vscode jetbrains-toolbox
   # dwm idea的bug [https://blog.csdn.net/u010563350/article/details/104948256](https://blog.csdn.net/u010563350/article/details/104948256)
   
+  #navicat 
+  # 无限试用的方法
+  https://blog.csdn.net/c_furong/article/details/80480131?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-80480131-blog-101687886.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-80480131-blog-101687886.pc_relevant_default&utm_relevant_index=2
+  yay -S navicat16-premium-cs
   ```
 
 - install 其他软件   
