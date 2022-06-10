@@ -20,4 +20,4 @@ wmname LG3D
 fcitx5 &
 dunst &
 flameshot &
-exec dwm & picom --no-vsync 
+exec dwm & picom --no-vsync
