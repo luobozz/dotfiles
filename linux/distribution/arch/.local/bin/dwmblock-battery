@@ -16,6 +16,7 @@ case $BLOCK_BUTTON in
 # - Scroll to change adjust xbacklight." ;;
 # 4) xbacklight -inc 10 ;;
 # 5) xbacklight -dec 10 ;;
+1) notify-send $(light);;
 4) light -A 10 ;;
 5) light -U 10 ;;
 6) "code" "$0";;
