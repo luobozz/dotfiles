@@ -131,6 +131,9 @@
   # 百度云盘
   yay -S electron9-bin
   yay -S baidunetdisk-electron
+
+  #压缩文件可视化
+  yay -S peazip
   ```
 
 - install java环境
