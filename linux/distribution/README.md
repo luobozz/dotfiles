@@ -98,6 +98,26 @@
 
 - install 其他软件   
   ```
+  #触摸板
+  sudo pacman -S libinput xf86-input-synaptics
+  sudo vim /etc/X11/xorg.conf.d/70-synaptics.conf
+  Section "InputClass"
+  	Identifier "touchpad"
+  	Driver "synaptics"
+  	MatchIsTouchpad "on"
+#  	Option "TapButton1" "1"
+  	Option "TapButton2" "1"
+  	Option "TapButton3" "3"
+#  	Option "VertEdgeScroll" "on"
+#  	Option "VertTwoFingerScroll" "on"
+#  	Option "HorizEdgeScroll" "on"
+#  	Option "HorizTwoFingerScroll" "on"
+  	Option "VertScrollDelta" "-112"
+  	Option "HorizScrollDelta" "-114"
+  	Option "MaxTapTime" "125"
+  EndSection
+
+
   #截图
   yay -S flameshot
   #top
