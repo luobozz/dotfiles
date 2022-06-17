@@ -24,6 +24,8 @@
  yay -S ffmpeg ffmpegthumbnailer
  #pdf预览
  yay -S poppler
+ #chm打开
+ yay -S kchmviewer
  ```
 
 - install dwmblocks
