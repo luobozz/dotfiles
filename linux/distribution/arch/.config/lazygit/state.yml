@@ -1,0 +1,19 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/el/code/luobo/dotfiles
+- /home/el/code/luobo/notes
+- /home/el/code/organization/shtf/zg-face-tpc
+- /home/el/code/luobo/hikvision_sdk_springboot
+- /home/el/code/organization/shtf/zgbank-face-recognition
+- /home/el/code/luobo/LBSH
+- /home/el/code/luobo/lbtd
+- /home/el/code/organization/shtf/zgbank-face-recognition/zfr-tpc
+- /home/el/code/luobo/sw-tools
+- /home/el/code/organization/shtf/zgbank-face-recognition/zfr-client
+- /home/el/code/organization/shtf/zgbank-face-recognition/zfr-service
+- /home/el/tmp/dotfiles-Q
+- /home/el/tmp
+startuppopupversion: 5
+customcommandshistory:
+- q
+hidecommandlog: false
