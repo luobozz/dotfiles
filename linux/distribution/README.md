@@ -26,7 +26,7 @@
  yay -S poppler
  #chm打开
  yay -S kchmviewer
- ```
+ ````
 
 - install dwmblocks
   ```
@@ -118,7 +118,7 @@
   	Option "HorizScrollDelta" "-114"
   	Option "MaxTapTime" "125"
   EndSection
-
+  ```
 
   #截图
   yay -S flameshot
