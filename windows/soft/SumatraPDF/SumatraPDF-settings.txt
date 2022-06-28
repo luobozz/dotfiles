@@ -1,0 +1,160 @@
+﻿# For documentation, see https://www.sumatrapdfreader.org/settings/settings3-4-6.html
+FixedPageUI [
+	TextColor = #000000
+	BackgroundColor = #C7EDCC
+	SelectionColor = #f5fc0c
+	WindowMargin = 2 4 2 4
+	PageSpacing = 4 4
+	HideScrollbars = false
+]
+ComicBookUI [
+	WindowMargin = 0 0 0 0
+	PageSpacing = 4 4
+	CbxMangaMode = false
+]
+ChmUI [
+	UseFixedPageUI = false
+]
+
+SelectionHandlers [
+]
+ExternalViewers [
+]
+
+ZoomLevels = 8.33 12.5 18 25 33.33 50 66.67 75 100 125 150 200 300 400 600 800 1000 1200 1600 2000 2400 3200 4800 6400
+ZoomIncrement = 0
+
+PrinterDefaults [
+	PrintScale = shrink
+]
+ForwardSearch [
+	HighlightOffset = 0
+	HighlightWidth = 15
+	HighlightColor = #6581ff
+	HighlightPermanent = false
+]
+Annotations [
+	HighlightColor = #ffff00
+	UnderlineColor = #00ff00
+	TextIconColor = #ffff00
+	TextIconType = 
+	DefaultAuthor = 
+]
+
+RememberOpenedFiles = true
+RememberStatePerDocument = true
+RestoreSession = true
+UiLanguage = cn
+EnableTeXEnhancements = false
+DefaultDisplayMode = automatic
+DefaultZoom = fit page
+Shortcuts [
+	[
+		Cmd = CmdScrollUp
+		Key = i
+	]
+	[
+		Cmd = CmdScrollDown
+		Key = k
+	]
+	[
+		Cmd = CmdScrollUpPage
+		Key = Alt + i
+	]
+	[
+		Cmd = CmdScrollDownPage
+		Key = Alt + k
+	]
+	[
+		Cmd = CmdScrollLeft
+		Key = j
+	]
+	[
+		Cmd = CmdScrollRight
+		Key = l
+	]
+	[
+		Cmd = CmdScrollLeft
+		Key = Alt + j
+	]
+	[
+		Cmd = CmdScrollRight
+		Key = Alt + l
+	]
+	[
+		Cmd = CmdToggleBookmarks
+		Key = Alt + b
+	]
+	[
+		Cmd = CmdZoomFitWidth
+		Key = Alt + 1
+	]
+	[
+		Cmd = CmdZoomFitPageAndSinglePage
+		Key = Alt + 2
+	]
+	[
+		Cmd = CmdZoomIn
+		Key = Ctrl + Alt + j
+	]
+	[
+		Cmd = CmdZoomOut
+		Key = Ctrl + Alt + l
+	]
+	[
+		Cmd = CmdInvertColors
+		Key = Alt + o
+	]
+]
+EscToExit = false
+ReuseInstance = false
+ReloadModifiedDocuments = true
+
+MainWindowBackground = #80fff200
+FullPathInTitle = false
+ShowMenubar = true
+ShowToolbar = false
+ShowFavorites = false
+ShowToc = true
+TocDy = 0
+SidebarDx = 289
+ToolbarSize = 18
+TabWidth = 300
+TreeFontSize = 0
+SmoothScroll = false
+ShowStartPage = true
+CheckForUpdates = true
+WindowState = 1
+WindowPos = -9 0 1298 1528
+UseTabs = true
+UseSysColors = false
+CustomScreenDPI = 0
+
+FileStates [
+	[
+		FilePath = D:\book\java\JAVA核心知识整理.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 217.853
+		PageNo = 36
+		Zoom = fit width
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -9 0 1298 1528
+		ShowToc = false
+		SidebarDx = 289
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+]
+SessionData [
+]
+TimeOfLastUpdateCheck = 0 0
+OpenCountWeek = 599
+
+# Settings below are not recognized by the current version

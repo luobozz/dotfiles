@@ -1,2 +1,2 @@
 # mark
-pdf-reader Okular
+pdf-reader SumatraPDF [WIKI](https://www.sumatrapdfreader.org/docs/SumatraPDF-documentation)
