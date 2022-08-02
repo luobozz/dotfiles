@@ -8,5 +8,7 @@ Set-PSReadLineOption -PredictionSource History # 设置预测文本来源为历�
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete # 设置 Tab 键补全
 Set-PSReadlineKeyHandler -Key "Ctrl+d" -Function ViExit
 
-$env:HTTP_PROXY="http://localhost:10809"
-$env:HTTPS_PROXY="http://localhost:10809"
+# $env:HTTP_PROXY="http://localhost:10809"
+# $env:HTTPS_PROXY="http://localhost:10809"
+
+function lg { lazygit }
