@@ -10,9 +10,10 @@
 ```console
 # git存疑问,不安装会报posh的特殊依赖
 
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
-Install-Module -Name BurntToast
+<!-- Install-Module posh-git -Scope CurrentUser -->
+<!-- Uninstall-Module oh-my-posh -AllVersions -->
+<!-- Install-Module -Name BurntToast -->
+scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 ```
 
 # 修改$Profile配置文件
