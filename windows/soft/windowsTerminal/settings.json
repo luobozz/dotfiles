@@ -14,17 +14,17 @@
         {
             "command": 
             {
-                "action": "switchToTab",
-                "index": 7
-            },
-            "keys": "ctrl+8"
+                "action": "moveFocus",
+                "direction": "down"
+            }
         },
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "down"
-            }
+                "action": "switchToTab",
+                "index": 7
+            },
+            "keys": "ctrl+8"
         },
         {
             "command": "find",
@@ -33,9 +33,10 @@
         {
             "command": 
             {
-                "action": "prevTab"
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "ctrl+pgup"
+            "keys": "ctrl+shift+d"
         },
         {
             "command": 
@@ -48,10 +49,9 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "right"
+                "action": "prevTab"
             },
-            "keys": "ctrl+shift+d"
+            "keys": "ctrl+pgup"
         },
         {
             "command": "paste",
@@ -60,10 +60,10 @@
         {
             "command": 
             {
-                "action": "switchToTab",
-                "index": 2
+                "action": "resizePane",
+                "direction": "right"
             },
-            "keys": "ctrl+3"
+            "keys": "alt+shift+plus"
         },
         {
             "command": "unbound",
@@ -108,14 +108,6 @@
         {
             "command": "unbound",
             "keys": "ctrl+tab"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+minus"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+plus"
         },
         {
             "command": "unbound",
@@ -166,12 +158,28 @@
             "keys": "ctrl+alt+k"
         },
         {
+            "command": "unbound",
+            "keys": "alt+shift+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+down"
+        },
+        {
             "command": 
             {
-                "action": "splitPane",
-                "split": "down"
+                "action": "switchToTab",
+                "index": 2
             },
-            "keys": "ctrl+shift+e"
+            "keys": "ctrl+3"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 3
+            },
+            "keys": "ctrl+4"
         },
         {
             "command": 
@@ -182,10 +190,10 @@
         {
             "command": 
             {
-                "action": "switchToTab",
-                "index": 3
+                "action": "splitPane",
+                "split": "down"
             },
-            "keys": "ctrl+4"
+            "keys": "ctrl+shift+e"
         },
         {
             "command": 
@@ -206,10 +214,26 @@
         {
             "command": 
             {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+shift+minus"
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 4294967295
             },
             "keys": "ctrl+9"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+shift+]"
         },
         {
             "command": 
@@ -245,6 +269,14 @@
         {
             "command": 
             {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+["
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 6
             },
@@ -269,6 +301,22 @@
             {
                 "action": "scrollUp"
             }
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "nextInOrder"
+            },
+            "keys": "alt+shift+right"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "previousInOrder"
+            },
+            "keys": "alt+shift+left"
         }
     ],
     "alwaysShowTabs": true,
@@ -289,13 +337,13 @@
             "font": 
             {
                 "face": "FiraMono NF",
-                "size": 14,
+                "size": 11,
                 "weight": "medium"
             },
             "opacity": 75,
             "padding": "0",
             "scrollbarState": "hidden",
-            "useAcrylic": false
+            "useAcrylic": true
         },
         "list": 
         [
@@ -323,16 +371,9 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "guid": "{09c0b40c-7d96-517e-80a9-9e2e308e45c3}",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{eab97050-6f3a-5640-8cfa-bf3e9c16bb6a}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
+                "name": "Windows PowerShell"
             }
         ]
     },
@@ -562,6 +603,29 @@
             "foreground": "#FFFFFF",
             "green": "#26A269",
             "name": "Ubuntu-18.04-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
             "purple": "#881798",
             "red": "#C21A23",
             "selectionBackground": "#FFFFFF",
