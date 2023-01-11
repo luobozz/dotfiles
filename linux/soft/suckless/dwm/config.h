@@ -142,7 +142,7 @@ static Key keys[] = {
 	// dmenu         
 	{ MODKEY,						XK_p,  	             spawn,              {.v= dmenucmd} },
 	//快捷启动         
-	{ MODKEY|Mod1Mask,             	XK_1,               spawn,              SHCMD("google-chrome-stable --allow-file-access-from-files") },
+	{ MODKEY|Mod1Mask,             	XK_1,               spawn,              SHCMD("dwm-soft-chrome") },
 	{ MODKEY|Mod1Mask,              XK_2,               spawn,              {.v = termcmd} },
 	{ MODKEY|Mod1Mask,             	XK_3,               spawn,              SHCMD("code") },
 	// 关闭当前窗口         
