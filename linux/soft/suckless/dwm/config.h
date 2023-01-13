@@ -144,6 +144,7 @@ static Key keys[] = {
 	//快捷启动         
 	{ MODKEY|Mod1Mask,             	XK_1,               spawn,              SHCMD("dwm-soft-chrome") },
 	{ MODKEY|Mod1Mask,              XK_2,               spawn,              {.v = termcmd} },
+	{ MODKEY,                       XK_Return,          spawn,              {.v = termcmd} },
 	{ MODKEY|Mod1Mask,             	XK_3,               spawn,              SHCMD("code") },
 	// 关闭当前窗口         
 	{ MODKEY,             			XK_c,                killclient,         {0} },
