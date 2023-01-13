@@ -209,8 +209,8 @@ static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NUL
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
-	{ MODKEY|ControlMask,   XK_o,           externalpipe,   {.v = openurlcmd } },
-	{ MODKEY, 		 	    XK_l,        	externalpipe,   {.v = copyurlcmd } },
+	/* { MODKEY|ControlMask,   XK_o,           externalpipe,   {.v = openurlcmd } }, */
+	/* { MODKEY, 		 	    XK_l,        	externalpipe,   {.v = copyurlcmd } }, */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
@@ -223,10 +223,10 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,            	XK_i,     		kscrollup,      {.i = 1} },
-	{ MODKEY|ControlMask,  	XK_i,     		kscrollup,      {.i = -1} },
-	{ MODKEY,            	XK_k,   		kscrolldown,    {.i = 1} },
-	{ MODKEY|ControlMask,  	XK_k,   		kscrolldown,    {.i = -1} },
+	{ MODKEY,            	XK_Up,     		kscrollup,      {.i = 1} },
+	{ MODKEY|ControlMask,  	XK_Up,     	kscrollup,      {.i = -1} },
+	{ MODKEY,            	XK_Down,   		kscrolldown,    {.i = 1} },
+	{ MODKEY|ControlMask,  	XK_Down,   		kscrolldown,    {.i = -1} },
 };
 
 /*

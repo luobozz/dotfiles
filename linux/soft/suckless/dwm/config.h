@@ -150,7 +150,8 @@ static Key keys[] = {
 	// 隐藏任务栏         
 	{ MODKEY,                       XK_b,                togglebar,          {0} },
 	// 开启一个浮动控制台         
- 	{ MODKEY,		            	XK_grave,            togglescratch,      {.ui = 0} },
+ 	/* { MODKEY,		            	XK_grave,            togglescratch,      {.ui = 0} }, */
+ 	{ MODKEY,		            	XK_Escape,            togglescratch,      {.ui = 0} },
           
     // 任务栏 标签移动         
  	{ MODKEY,						XK_Left,	         shiftview,	         {.i = -1} },
