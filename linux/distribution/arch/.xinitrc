@@ -5,8 +5,8 @@ export XMODIFIERS=@im=fcitx
 export TERMINAL=st
 export all_proxy=http://127.0.0.1:7890
 #export https_proxy=http://127.0.0.1:7892
-export _JAVA_AWT_WM_NONREPARENTING=1 
-export AWT_TOOLKIT=MToolkit 
+#export _JAVA_AWT_WM_NONREPARENTING=1 
+#export AWT_TOOLKIT=MToolkit 
 
 if [ -d $HOME/.xinitrc.d ]; then
   for i in $HOME/.xinitrc.d/*.sh; do
@@ -18,6 +18,6 @@ if [ -d $HOME/.xinitrc.d ]; then
 fi
 wmname LG3D
 fcitx5 &
-dunst &
+#dunst &
 flameshot &
-exec dwm & picom --no-vsync
+exec dwm & picom -experimental-backends --no-vsync --config ~/.config/picom/picom.conf
