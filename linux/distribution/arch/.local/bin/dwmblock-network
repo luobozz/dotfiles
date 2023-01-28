@@ -18,7 +18,7 @@ esac
 
 #TODO 重新编写wifi逻辑
 case "$(cat /sys/class/net/w*/operstate 2>/dev/null)" in
-    down) wifiicon=wifi_off ;;
+    down) wifiicon=$wifi_off ;;
     # up) wifiicon="$(awk '/^\s*w/ { print "直", int($3 * 100 / 70) "%" }' /proc/net/wireless)" ;;
     up) wifiicon="$(awk '/^\s*w/ { print "直"}' /proc/net/wireless)" ;;
 esac

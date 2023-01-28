@@ -157,6 +157,8 @@ static Key keys[] = {
     // 任务栏 标签移动         
  	{ MODKEY,						XK_Left,	         shiftview,	         {.i = -1} },
  	{ MODKEY,						XK_Right,	         shiftview,	         {.i = +1} },
+	{ MODKEY,                       XK_w, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_w,  tagmon,         {.i = -1 } },
 	{ MODKEY,						XK_Tab,		         view,		         {0} },
 	TAGKEYS(                        XK_1,                                    0)
 	TAGKEYS(                        XK_2,                                    1)
@@ -189,39 +191,6 @@ static Key keys[] = {
 	{ MODKEY,						XK_s,				 togglesticky,	     {0} },	
 	{ MODKEY|ShiftMask,             XK_q,                spawn,              SHCMD("ps -ef | grep Xorg | awk '{print $2}' | xargs kill -9") },
 	{ MODKEY|ShiftMask,             XK_a,                spawn,              SHCMD("flameshot gui")},
-	// 布局
-	// 平铺模式
-	// { MODKEY,                       XK_space,  setlayout,      {0} },
-	// { MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	// // 浮动模式
-	// { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[8]} }, 
-	// // 单窗口模式
-	// { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[5]} },
-
-	/* 边距缩放 不用 */
-	// { MODKEY,			XK_z,		incrgaps,	{.i = +3 } },
-	// { MODKEY,			XK_x,		incrgaps,	{.i = -3 } },
-	// { MODKEY,			XK_a,		togglegaps,	{0} },
-	// { MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
-	
-	// { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-	// { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	// { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	// { MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	// { MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	// { MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	// { MODKEY,                       XK_Return, zoom,           {0} },
-	// { MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	// { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	// { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	// { MODKEY,                       XK_space,  setlayout,      {0} },
-	// { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	// { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	// { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	// { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	// { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	// { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	// { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 /* button definitions */

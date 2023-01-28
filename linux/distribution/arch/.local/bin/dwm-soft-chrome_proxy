@@ -1,0 +1,2 @@
+#!/bin/bash
+export all_proxy=http://127.0.0.1:7890 && google-chrome-stable --allow-file-access-from-files --use-gl=desktop --enable-features=VaapiVideoDecoder
