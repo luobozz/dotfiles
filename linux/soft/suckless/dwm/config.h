@@ -140,7 +140,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static Key keys[] = {
 	/* modifier                     key                  function            argument */
 	// dmenu         
-	{ MODKEY,						XK_p,  	             spawn,              {.v= dmenucmd} },
+	/* { MODKEY,						XK_p,  	             spawn,              {.v= dmenucmd} }, */
+    {Mod1Mask,                      XK_space,           spawn,              SHCMD("rofi -show run")},
 	//快捷启动         
 	{ MODKEY|Mod1Mask,             	XK_1,               spawn,              SHCMD("dwm-soft-chrome") },
 	{ MODKEY|Mod1Mask,              XK_2,               spawn,              {.v = termcmd} },
