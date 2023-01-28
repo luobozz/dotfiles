@@ -189,7 +189,7 @@ static Key keys[] = {
 	{ MODKEY,						XK_space,			 zoom,		         {0} },
 	// 窗口伴随         		
 	{ MODKEY,						XK_s,				 togglesticky,	     {0} },	
-	{ MODKEY|ShiftMask,             XK_q,                spawn,              SHCMD("ps -ef | grep Xorg | awk '{print $2}' | xargs kill -9") },
+	{ MODKEY|ShiftMask,             XK_F12,                spawn,              SHCMD("ps -ef | grep Xorg | awk '{print $2}' | xargs kill -9") },
 	{ MODKEY|ShiftMask,             XK_a,                spawn,              SHCMD("flameshot gui")},
 };
 
