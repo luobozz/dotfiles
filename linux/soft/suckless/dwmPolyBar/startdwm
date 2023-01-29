@@ -1,0 +1,15 @@
+#!/bin/bash
+sh ~/.xsession
+
+# Get list of desktop files in ~/.config/autostart
+mapfile -t dfiles < <(find "$HOME/.config/autostart" -iname '*.desktop')
+
+# Launch all desktop files
+for f in "${dfiles[@]}"; do
+    name="${f#$HOME/.config/autostart/}"
+    gtk-launch "$name" &
+done
+
+while true; do
+    dwm 2>&1 | while read line; do echo "[$(date "+%b %d %T")] $line" >> ~/.dwm.log; done
+done

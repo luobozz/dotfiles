@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=dwm
+Comment=Dynamic Window Manager
+Exec=startdwm
+TryExec=startdwm
+Type=Application
+X-LightDM-DesktopName=dwm
+DesktopNames=dwm
+Keywords=tiling;wm;windowmanager;window;manager;
