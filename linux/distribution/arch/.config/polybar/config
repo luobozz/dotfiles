@@ -32,7 +32,7 @@ lable-padding = 1
 
 
 [colors]
-background = #37474F
+background = #cc37474F
 
 foreground = #eeeeee
 
@@ -68,10 +68,12 @@ line-color = ${colors.icon}
 
 padding-right = 1
 
-font-0 = Fira Code Nerd Font Mono:size=10;2
-font-1 = Alibaba PuHuiTi 2.0:size=10;2
+font-0 = Fira Mono:size=10;2
+font-1 = Fira Code Nerd Font Mono:size=14;2
+font-2 = Alibaba PuHuiTi 2.0:size=10;2
 
 modules-left = dwm
+modules-right = raf mem cpu disk date network-proxy network 
 ; modules-right = termdown updates spotify previous playpause next pad weather-icon weather-temp pad memory pad cpu cpu-speed pad temperature wlan eth expressvpn openvpn battery backlight pulseaudio date restart lock notifications redshift powermenu
 
 tray-position = right
@@ -82,7 +84,43 @@ override-redirect = false
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[module/raf]
+type = custom/script
+exec = dwmblock-network-raf
+interval = 2.0
 
+[module/mem]
+type = custom/script
+exec = dwmblock-mem
+interval = 2.0
+
+[module/cpu]
+type = custom/script
+exec = dwmblock-cpu
+interval = 2.0
+
+[module/disk]
+type = custom/script
+exec = dwmblock-disk
+interval = 5.0
+
+[module/network]
+type = custom/script
+exec = dwmblock-network
+interval = 1.0
+click-left = dwmblocktools-exec 'st -e nmtui'
+
+[module/network-proxy]
+type = custom/script
+exec = dwmblock-network-proxy
+interval = 1.0
+click-left = sh $HOME/soft/clash/setting-config.sh
+
+[module/date]
+type = custom/script
+exec = dwmblock-date
+interval = 1.0
+click-left = dwmblocktools-exec 'st -e calcurse'
 
 [module/dwm]
 type = internal/dwm
@@ -153,7 +191,5 @@ label-empty =
 
 [module/title]
 type = internal/xwindow
-
-
 
 ; vim:ft=dosini

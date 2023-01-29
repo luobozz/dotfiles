@@ -90,5 +90,5 @@ function status_dwm_block(){
     dwmblocks
 }
 
-status_dwm_block
+# status_dwm_block
 # status_bar_xsetroot

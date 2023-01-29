@@ -84,6 +84,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 
 #include "movestack.c"
+#include "nextprev.c"
 static Key keys[] = {
 	/* modifier key function argument */
 	{ Mod1Mask, XK_space, spawn,SHCMD("rofi -show run")},
@@ -97,14 +98,14 @@ static Key keys[] = {
 	{ MODKEY, XK_c, killclient, {0}},
 	{ MODKEY, XK_b, togglebar, {0}},
 	{ MODKEY, XK_Escape, togglescratch, {.v = scratchpadcmd }},
-	// { MODKEY, XK_Left, shiftview, {.i = -1}},
-	// { MODKEY, XK_Right, shiftview, {.i = +1}},
+	{ MODKEY, XK_Left, view_adjacent, {.i = -1}},
+	{ MODKEY, XK_Right, view_adjacent, {.i = +1}},
 	{ MODKEY, XK_j, focusstack, {.i = -1}},
 	{ MODKEY, XK_l, focusstack, {.i = +1}},
 	{ MODKEY|ShiftMask, XK_j, movestack, {.i = -1}},
 	{ MODKEY|ShiftMask, XK_l, movestack, {.i = +1}},
 	{ MODKEY, XK_w, focusmon, {.i = +1}},
-	{ MODKEY|ShiftMask, tagmon, focusmon, {.i = -1}},
+	{ MODKEY|ShiftMask, XK_w, tagmon, {.i = -1}},
 	{ MODKEY, XK_Tab, view, {0}},
 	{ MODKEY, XK_space, zoom, {0}},
 	{ MODKEY, XK_s, togglesticky, {0}},
@@ -181,7 +182,7 @@ static Button buttons[] = {
 	{ ClkTagBar,            0,              Button1,        view,           {0} },
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
-	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+	// { ClkTagBar,            MODKEY,         Button3,        togtoggleviewgletag,      {0} },
 };
 
 static const char *ipcsockpath = "/tmp/dwm.sock";

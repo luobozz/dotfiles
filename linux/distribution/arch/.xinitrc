@@ -20,4 +20,7 @@ wmname LG3D
 fcitx5 &
 #dunst &
 flameshot &
-exec dwm & picom -experimental-backends --no-vsync --config ~/.config/picom/picom.conf
+exec dwm &
+xrandr --output DVI-D-0 --primary &
+$(sleep 1s && "$HOME/.local/bin/polybar/launch-polybar") & 
+picom -experimental-backends --no-vsync --config ~/.config/picom/picom.conf

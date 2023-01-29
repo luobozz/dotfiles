@@ -27,4 +27,4 @@ for location in ${locations[@]}; do
     # echo $lres
 done
 # printf "%s:%s\n" "$location" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "/" $2}')"
-echo $echores
+echo "$echores "

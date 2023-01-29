@@ -46,4 +46,4 @@ fi
 TX=$(echo $TX | awk '{printf("%.1f%s",$1,$2)}')
 RX=$(echo $RX | awk '{printf("%.1f%s",$1,$2)}')
 
-printf ":$TX :$RX"
+printf ":$TX :$RX "
