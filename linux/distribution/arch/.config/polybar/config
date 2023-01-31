@@ -66,18 +66,18 @@ foreground = ${colors.foreground}
 line-size = 6
 line-color = ${colors.icon}
 
-padding-right = 1
+padding-right = 0
 
 font-0 = Fira Mono:size=10;2
 font-1 = Fira Code Nerd Font Mono:size=14;2
 font-2 = Alibaba PuHuiTi 2.0:size=10;2
 
-modules-left = dwm
+modules-left = i3
 modules-right = raf mem cpu disk date network-proxy network 
 ; modules-right = termdown updates spotify previous playpause next pad weather-icon weather-temp pad memory pad cpu cpu-speed pad temperature wlan eth expressvpn openvpn battery backlight pulseaudio date restart lock notifications redshift powermenu
 
 tray-position = right
-tray-padding = 2
+tray-padding = 1
 
 override-redirect = false
 
@@ -187,6 +187,84 @@ label-empty =
 ; Separator in between workspaces
 ; label-separator = |
 
+[module/i3]
+type = internal/i3
+
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
+
+ws-icon-0 = 1;♚
+ws-icon-1 = 2;♛
+ws-icon-2 = 3;♜
+ws-icon-3 = 4;♝
+ws-icon-4 = 5;♞
+ws-icon-default = ♟
+
+label-dimmed-underline = ${root.background}
+
+; Available tags:
+;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+;   <label-mode> (default)
+format = <label-state> <label-mode>
+
+; Available tokens:
+;   %mode%
+; Default: %mode%
+label-mode = %mode%
+label-mode-padding = 0
+label-mode-background = #e60053
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-focused =  %index%
+label-focused-foreground =  ${colors.foreground}
+label-focused-background = ${colors.tag-focused-background}
+label-focused-padding = ${global/wm.lable-padding}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-unfocused = %index%
+label-unfocused-padding = ${global/wm.lable-padding}
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-visible = %index%
+label-visible-underline = #555555
+label-visible-padding = ${global/wm.lable-padding}
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = ${global/wm.lable-padding}
+
+; ; Separator in between workspaces
+; label-separator = |
+; label-separator-padding = 0
+; label-separator-foreground = #ffb52a
 
 
 [module/title]
