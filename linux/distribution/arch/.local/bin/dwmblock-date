@@ -16,7 +16,7 @@ case "$week" in
     "0") cweek="周日" ;;
 esac
 
-clock=$(date '+%H')
+clock=$((10#$(date '+%H')))
 if (( clock < 8 )); then
     sign="凌晨了,早点休息"
 elif (( clock < 12 )); then
@@ -31,4 +31,4 @@ fi
 
 
 
-echo " $sign $(date +"%Y年%-m月%-d日 $cweek %R:%S") "
+echo "$sign $(date +"%Y年%-m月%-d日 $cweek %R:%S") "

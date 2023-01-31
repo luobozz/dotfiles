@@ -25,12 +25,13 @@ tiling_drag modifier titlebar
 
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+c kill
+bindsym $mod+Shift+Escape move scratchpad 
+bindsym $mod+Escape scratchpad show
 bindsym $mod+m exec slock
 bindsym $mod+Shift+a exec flameshot gui
 bindsym $mod+Mod1+1 exec dwm-soft-chrome
 bindsym Mod1+space exec --no-startup-id rofi -show run
 bindsym $mod+F11 fullscreen toggle
-bindsym $mod+Shift+Escape floating toggle
 bindsym $mod+minus resize shrink width 10 px or 10 ppt
 bindsym $mod+equal resize grow width 10 px or 10 ppt
 bindsym $mod+Shift+c reload
@@ -88,7 +89,11 @@ default_orientation auto
 
 gaps inner 10
 
+workspace $ws1 output DVI-D-0
 workspace $ws2 output DVI-D-0
 workspace $ws7 output HDMI-0
 workspace $ws8 output HDMI-0
 workspace $ws9 output HDMI-0
+
+for_window [class="popst"] sticky enable
+for_window [class="popst"] floating enable

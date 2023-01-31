@@ -49,8 +49,7 @@ spotify = #1db954
 
 
 [bar/main]
-monitor = ${env:MONITOR:}
-monitor-fallback = eDP1
+monitor = DVI-D-0
 monitor-strict = false
 width = 100%
 height = 28
@@ -72,8 +71,9 @@ font-0 = Fira Mono:size=10;2
 font-1 = Fira Code Nerd Font Mono:size=14;2
 font-2 = Alibaba PuHuiTi 2.0:size=10;2
 
-modules-left = i3
-modules-right = raf mem cpu disk date network-proxy network 
+modules-left = i3 title
+modules-center = date
+modules-right = raf mem cpu network-proxy network 
 ; modules-right = termdown updates spotify previous playpause next pad weather-icon weather-temp pad memory pad cpu cpu-speed pad temperature wlan eth expressvpn openvpn battery backlight pulseaudio date restart lock notifications redshift powermenu
 
 tray-position = right
@@ -83,6 +83,43 @@ override-redirect = false
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[bar/secondary]
+monitor = HDMI-0
+monitor-strict = false
+width = 100%
+height = 28
+offset-x = 0%
+;offset-y = 1%
+radius = 0
+fixed-center = true
+
+enable-ipc = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 6
+line-color = ${colors.icon}
+
+padding-right = 0
+
+font-0 = Fira Mono:size=10;2
+font-1 = Fira Code Nerd Font Mono:size=14;2
+font-2 = Alibaba PuHuiTi 2.0:size=10;2
+
+modules-left = i3 title
+modules-right = disk home
+; modules-right = termdown updates spotify previous playpause next pad weather-icon weather-temp pad memory pad cpu cpu-speed pad temperature wlan eth expressvpn openvpn battery backlight pulseaudio date restart lock notifications redshift powermenu
+
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/home]
+type = custom/script
+exec = dwmblock-home
+click-left = feh --recursive --randomize --bg-fill ~/pictures/wallpapers
+format-padding = 1
 
 [module/raf]
 type = custom/script
@@ -248,7 +285,6 @@ label-unfocused-padding = ${global/wm.lable-padding}
 ;   %output%
 ; Default: %icon%  %name%
 label-visible = %index%
-label-visible-underline = #555555
 label-visible-padding = ${global/wm.lable-padding}
 ; Available tokens:
 ;   %name%
@@ -269,5 +305,7 @@ label-urgent-padding = ${global/wm.lable-padding}
 
 [module/title]
 type = internal/xwindow
+format-padding = 2
+label-maxlen = 50
 
 ; vim:ft=dosini

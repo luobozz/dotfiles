@@ -56,8 +56,8 @@ function totalCPU(){
     let used=$calcT-$calcI
     cpuRate=$(echo $used $calcT | awk '{printf("%.2f\n",$1/$2*100)}')
     cpuRateI=$(echo $cpuRate | awk '{printf("%.f\n",$1)}')
-    echo "$(dwmblocktools-process-bar $cpuRateI)${cpuRate}%/${coreCount}核"  
+    echo "$(dwmblocktools-process-bar $cpuRateI)${cpuRate}%/${coreCount}核 "  
 }
 
-totalCPU
+totalCPU 2>/dev/null
 # aniCPU
