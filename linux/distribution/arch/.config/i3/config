@@ -9,6 +9,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec_always --no-startup-id /home/luobo/.local/bin/polybar/launch-polybar
+exec_always 'st -n popst -c popst'
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -26,7 +27,7 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+c kill
 bindsym $mod+Shift+Escape move scratchpad 
-bindsym $mod+Escape scratchpad show
+bindsym $mod+Escape exec i3-pop-terminal 
 bindsym $mod+m exec slock
 bindsym $mod+Shift+a exec flameshot gui
 bindsym $mod+Mod1+1 exec dwm-soft-chrome
@@ -95,5 +96,8 @@ workspace $ws7 output HDMI-0
 workspace $ws8 output HDMI-0
 workspace $ws9 output HDMI-0
 
+floating_minimum_size 175 x 50 
+
+
 for_window [class="popst"] sticky enable
-for_window [class="popst"] floating enable
+for_window [class="popst"] floating enable resize set 1200 780,move position center
