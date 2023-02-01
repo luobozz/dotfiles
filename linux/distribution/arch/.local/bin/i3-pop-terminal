@@ -1,0 +1,25 @@
+#/bin/bash
+cachefile=$HOME/.cache/popst.cache
+tf=$(cat $cachefile 2>/dev/null)
+
+if [[ $tf == '' ]] || [[ $tf == 'false' ]];then
+    # 打开
+    echo '打开'
+    count=`ps -ef | grep "popst" | grep -v "grep"| wc -l`
+    if [[ $count == 0 ]];then
+       st -n popst -c popst
+    else
+        i3-msg -q '[class="popst"]' scratchpad show
+    fi
+    echo 'true' > $cachefile
+else
+    # 关闭
+    echo '关闭'
+    sumpop=`i3-scratch-list|grep "~"| wc -l`
+    if [[ $sumpop == 0 ]];then
+        i3-msg -q '[class="popst"]' move scratchpad
+    else
+        i3-msg -q '[class="popst"]' scratchpad show
+    fi
+    echo 'false' > $cachefile
+fi
