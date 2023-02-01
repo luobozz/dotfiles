@@ -108,7 +108,7 @@ font-1 = Fira Code Nerd Font Mono:size=14;2
 font-2 = Alibaba PuHuiTi 2.0:size=10;2
 
 modules-left = i3 title
-modules-right = disk home
+modules-right = eth disk home
 ; modules-right = termdown updates spotify previous playpause next pad weather-icon weather-temp pad memory pad cpu cpu-speed pad temperature wlan eth expressvpn openvpn battery backlight pulseaudio date restart lock notifications redshift powermenu
 
 
@@ -158,6 +158,7 @@ type = custom/script
 exec = dwmblock-date
 interval = 1.0
 click-left = dwmblocktools-exec 'st -e calcurse'
+right = dwmblocktools-exec 'st -e calcurse'
 
 [module/dwm]
 type = internal/dwm
