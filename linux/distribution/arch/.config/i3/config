@@ -2,7 +2,8 @@ set $mod Mod4
 
 font pango:Fira Mono 10
 font pango:Fira Code Nerd Font Mono 10
-font pango: Alibaba PuHuiTi 2.0 10
+font pango:Microsoft YaHei 10
+font pango:Alibaba PuHuiTi 2.0 10
 
 # 自动启动
 exec --no-startup-id dex --autostart --environment i3
