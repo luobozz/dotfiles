@@ -1,6 +1,5 @@
 /* See LICENSE file for license details. */
-#define _XOPEN_SOURCE   500
-#define LENGTH(X)       (sizeof X / sizeof X[0])
+#define _XOPEN_SOURCE 500
 #if HAVE_SHADOW_H
 #include <shadow.h>
 #endif
@@ -16,9 +15,6 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <X11/extensions/Xrandr.h>
-#ifdef XINERAMA
-#include <X11/extensions/Xinerama.h>
-#endif
 #include <X11/keysym.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
@@ -30,14 +26,11 @@
 char *argv0;
 
 enum {
-    BACKGROUND,
 	INIT,
 	INPUT,
 	FAILED,
 	NUMCOLS
 };
-
-#include "config.h"
 
 struct lock {
 	int screen;
@@ -45,11 +38,6 @@ struct lock {
 	Pixmap pmap;
 	Pixmap bgmap;
 	unsigned long colors[NUMCOLS];
-    unsigned int x, y;
-    unsigned int xoff, yoff, mw, mh;
-    Drawable drawable;
-    GC gc;
-    XRectangle rectangles[LENGTH(rectangles)];
 };
 
 struct xrandr {
@@ -57,6 +45,8 @@ struct xrandr {
 	int evbase;
 	int errbase;
 };
+
+#include "config.h"
 
 Imlib_Image image;
 
@@ -139,29 +129,6 @@ gethash(void)
 }
 
 static void
-resizerectangles(struct lock *lock)
-{
-	int i;
-
-	for (i = 0; i < LENGTH(rectangles); i++){
-		lock->rectangles[i].x = (rectangles[i].x * logosize)
-                                + lock->xoff + ((lock->mw) / 2) - (logow / 2 * logosize);
-		lock->rectangles[i].y = (rectangles[i].y * logosize)
-                                + lock->yoff + ((lock->mh) / 2) - (logoh / 2 * logosize);
-		lock->rectangles[i].width = rectangles[i].width * logosize;
-		lock->rectangles[i].height = rectangles[i].height * logosize;
-	}
-}
-
-static void
-drawlogo(Display *dpy, struct lock *lock, int color)
-{
-	XSetForeground(dpy, lock->gc, lock->colors[color]);
-	XFillRectangles(dpy, lock->win, lock->gc, lock->rectangles, LENGTH(rectangles));
-	XSync(dpy, False);
-}
-
-static void
 readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
        const char *hash)
 {
@@ -227,12 +194,11 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 			color = len ? INPUT : ((failure || failonclear) ? FAILED : INIT);
 			if (running && oldc != color) {
 				for (screen = 0; screen < nscreens; screen++) {
-                    if(locks[screen]->bgmap)
-                        XSetWindowBackgroundPixmap(dpy, locks[screen]->win, locks[screen]->bgmap);
-                    else
-                        XSetWindowBackground(dpy, locks[screen]->win, locks[screen]->colors[0]);
-					//XClearWindow(dpy, locks[screen]->win);
-                    drawlogo(dpy, locks[screen], color);
+                                        if (locks[screen]->bgmap)
+                                                XSetWindowBackgroundPixmap(dpy, locks[screen]->win, locks[screen]->bgmap);
+                                        else
+                                                XSetWindowBackground(dpy, locks[screen]->win, locks[screen]->colors[0]);
+					XClearWindow(dpy, locks[screen]->win);
 				}
 				oldc = color;
 			}
@@ -267,10 +233,6 @@ lockscreen(Display *dpy, struct xrandr *rr, int screen)
 	XColor color, dummy;
 	XSetWindowAttributes wa;
 	Cursor invisible;
-#ifdef XINERAMA
-	XineramaScreenInfo *info;
-	int n;
-#endif
 
 	if (dpy == NULL || screen < 0 || !(lock = malloc(sizeof(struct lock))))
 		return NULL;
@@ -278,60 +240,39 @@ lockscreen(Display *dpy, struct xrandr *rr, int screen)
 	lock->screen = screen;
 	lock->root = RootWindow(dpy, lock->screen);
 
-    if(image) 
-    {
-        lock->bgmap = XCreatePixmap(dpy, lock->root, DisplayWidth(dpy, lock->screen), DisplayHeight(dpy, lock->screen), DefaultDepth(dpy, lock->screen));
-        imlib_context_set_image(image);
-        imlib_context_set_display(dpy);
-        imlib_context_set_visual(DefaultVisual(dpy, lock->screen));
-        imlib_context_set_colormap(DefaultColormap(dpy, lock->screen));
-        imlib_context_set_drawable(lock->bgmap);
-        imlib_render_image_on_drawable(0, 0);
-        imlib_free_image();
-    }
+        if(image)
+        {
+            lock->bgmap = XCreatePixmap(dpy, lock->root, DisplayWidth(dpy, lock->screen), DisplayHeight(dpy, lock->screen), DefaultDepth(dpy, lock->screen));
+            imlib_context_set_display(dpy);
+            imlib_context_set_visual(DefaultVisual(dpy, lock->screen));
+            imlib_context_set_colormap(DefaultColormap(dpy, lock->screen));
+            imlib_context_set_drawable(lock->bgmap);
+            imlib_render_image_on_drawable(0, 0);
+            imlib_free_image();
+        }
+
 	for (i = 0; i < NUMCOLS; i++) {
 		XAllocNamedColor(dpy, DefaultColormap(dpy, lock->screen),
 		                 colorname[i], &color, &dummy);
 		lock->colors[i] = color.pixel;
 	}
 
-	lock->x = DisplayWidth(dpy, lock->screen);
-	lock->y = DisplayHeight(dpy, lock->screen);
-#ifdef XINERAMA
-	if ((info = XineramaQueryScreens(dpy, &n))) {
-		lock->xoff = info[0].x_org;
-		lock->yoff = info[0].y_org;
-		lock->mw = info[0].width;
-		lock->mh = info[0].height;
-	} else
-#endif
-	{
-		lock->xoff = lock->yoff = 0;
-		lock->mw = lock->x;
-		lock->mh = lock->y;
-	}
-	lock->drawable = XCreatePixmap(dpy, lock->root,
-            lock->x, lock->y, DefaultDepth(dpy, screen));
-	lock->gc = XCreateGC(dpy, lock->root, 0, NULL);
-	XSetLineAttributes(dpy, lock->gc, 1, LineSolid, CapButt, JoinMiter);
-
 	/* init */
 	wa.override_redirect = 1;
-	wa.background_pixel = lock->colors[BACKGROUND];
+	wa.background_pixel = lock->colors[INIT];
 	lock->win = XCreateWindow(dpy, lock->root, 0, 0,
-	                          lock->x, lock->y,
+	                          DisplayWidth(dpy, lock->screen),
+	                          DisplayHeight(dpy, lock->screen),
 	                          0, DefaultDepth(dpy, lock->screen),
 	                          CopyFromParent,
 	                          DefaultVisual(dpy, lock->screen),
 	                          CWOverrideRedirect | CWBackPixel, &wa);
-    if(lock->bgmap)
-        XSetWindowBackgroundPixmap(dpy, lock->win, lock->bgmap);
+        if(lock->bgmap)
+          XSetWindowBackgroundPixmap(dpy, lock->win, lock->bgmap);
 	lock->pmap = XCreateBitmapFromData(dpy, lock->win, curs, 8, 8);
 	invisible = XCreatePixmapCursor(dpy, lock->pmap, lock->pmap,
 	                                &color, &color, 0, 0);
 	XDefineCursor(dpy, lock->win, invisible);
-
-	resizerectangles(lock);
 
 	/* Try to grab mouse pointer *and* keyboard for 600ms, else fail the lock */
 	for (i = 0, ptgrab = kbgrab = -1; i < 6; i++) {
@@ -353,7 +294,6 @@ lockscreen(Display *dpy, struct xrandr *rr, int screen)
 				XRRSelectInput(dpy, lock->win, RRScreenChangeNotifyMask);
 
 			XSelectInput(dpy, lock->root, SubstructureNotifyMask);
-			drawlogo(dpy, lock, INIT);
 			return lock;
 		}
 
@@ -433,60 +373,32 @@ main(int argc, char **argv) {
 	if (setuid(duid) < 0)
 		die("slock: setuid: %s\n", strerror(errno));
 
-	/*Create screenshot Image*/
+	/* Load picture */
+        Imlib_Image buffer = imlib_load_image(background_image);
+	imlib_context_set_image(buffer);
+        int background_image_width = imlib_image_get_width();
+        int background_image_height = imlib_image_get_height();
+
+        /* Create an image to be rendered */
 	Screen *scr = ScreenOfDisplay(dpy, DefaultScreen(dpy));
-	image = imlib_create_image(scr->width,scr->height);
-	imlib_context_set_image(image);
-	imlib_context_set_display(dpy);
-	imlib_context_set_visual(DefaultVisual(dpy,0));
-	imlib_context_set_drawable(RootWindow(dpy,XScreenNumberOfScreen(scr)));	
-	imlib_copy_drawable_to_image(0,0,0,scr->width,scr->height,0,0,1);
+	image = imlib_create_image(scr->width, scr->height);
+        imlib_context_set_image(image);
 
-#ifdef BLUR
+        /* Fill the image for every X monitor */
+        XRRMonitorInfo	*monitors;
+        int number_of_monitors;
+        monitors = XRRGetMonitors(dpy, RootWindow(dpy, XScreenNumberOfScreen(scr)), True, &number_of_monitors);
 
-	/*Blur function*/
-	imlib_image_blur(blurRadius);
-#endif // BLUR	
+        int i;
+        for (i = 0; i < number_of_monitors; i++) {
+            imlib_blend_image_onto_image(buffer, 0, 0, 0, background_image_width, background_image_height, monitors[i].x, monitors[i].y, monitors[i].width, monitors[i].height);
+        }
 
-#ifdef PIXELATION
-	/*Pixelation*/
-	int width = scr->width;
-	int height = scr->height;
-	
-	for(int y = 0; y < height; y += pixelSize)
-	{
-		for(int x = 0; x < width; x += pixelSize)
-		{
-			int red = 0;
-			int green = 0;
-			int blue = 0;
+        /* Clean up */
+        imlib_context_set_image(buffer);
+        imlib_free_image();
+        imlib_context_set_image(image);
 
-			Imlib_Color pixel; 
-			Imlib_Color* pp;
-			pp = &pixel;
-			for(int j = 0; j < pixelSize && j < height; j++)
-			{
-				for(int i = 0; i < pixelSize && i < width; i++)
-				{
-					imlib_image_query_pixel(x+i,y+j,pp);
-					red += pixel.red;
-					green += pixel.green;
-					blue += pixel.blue;
-				}
-			}
-			red /= (pixelSize*pixelSize);
-			green /= (pixelSize*pixelSize);
-			blue /= (pixelSize*pixelSize);
-			imlib_context_set_color(red,green,blue,pixel.alpha);
-			imlib_image_fill_rectangle(x,y,pixelSize,pixelSize);
-			red = 0;
-			green = 0;
-			blue = 0;
-		}
-	}
-	
-	
-#endif
 	/* check for Xrandr support */
 	rr.active = XRRQueryExtension(dpy, &rr.evbase, &rr.errbase);
 
@@ -523,12 +435,5 @@ main(int argc, char **argv) {
 	/* everything is now blank. Wait for the correct password */
 	readpw(dpy, &rr, locks, nscreens, hash);
 
-	for (nlocks = 0, s = 0; s < nscreens; s++) {
-		XFreePixmap(dpy, locks[s]->drawable);
-		XFreeGC(dpy, locks[s]->gc);
-	}
-
-	XSync(dpy, 0);
-	XCloseDisplay(dpy);
 	return 0;
 }
