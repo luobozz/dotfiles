@@ -19,7 +19,7 @@
 - install ranger
  ```
  #图片预览
- pip install ueberzug
+ pip install ueberzug -i https://pypi.tuna.tsinghua.edu.cn/simple/
  #视频预览
  yay -S ffmpeg ffmpegthumbnailer
  #pdf预览
